@@ -1,0 +1,95 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6f3f3; /* A light, neutral background color */
+    padding: 2rem 0; /* Padding top and bottom */
+  }
+  .carousel__container:hover .carousel__image {
+    transform: scale(1.1); /* Slightly scale up the image on hover */
+  }
+  
+  .carousel__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2em;
+    padding: 1em; /* Add padding inside the container */
+    background-color: white;
+    width: 700px;
+    border-radius: 20px; /* Rounded corners for modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+    align-items: center; /* Center the items horizontally */
+  }
+  
+  .carousel__container:hover {
+    transform: scale(1.03); /* Slightly scale up on hover */
+  }
+  
+  .carousel__image {
+    width: 100%; /* Make the image full width of the container */
+    height: auto; /* Keep the height auto to maintain aspect ratio */
+    max-height: 300px; /* Set a max-height for all images */
+    object-fit: contain; /* Ensure the image is contained within the element bounds, preserving aspect ratio */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+  }
+  
+  .carousel__title, .carousel__description {
+    padding: 0.5em; /* Padding for the text */
+  }
+  .carousel__container:hover .carousel__image {
+    transform: scale(1.1); /* Slightly scale up the image on hover */
+  }
+  
+  .carousel__title {
+    font-size: 1.5rem;
+    color: #10375c; /* Dark blue color for emphasis */
+  }
+  
+  .carousel__description {
+    color: #10375c; /* Consistent text color */
+    font-size: 1rem;
+  }
+  
+  /* Carousel controls */
+  .right_arrow, .left_arrow {
+    font-size: 2rem; /* Smaller arrows */
+    color: #10375c; /* Dark blue for visibility */
+    margin: 0 1em; /* Spacing around arrows */
+  }
+  
+  /* Button design */
+  .carousel__learn-more-button {
+    background-color: #4169E1; /* Company color */
+    color: #fff;
+    border: none;
+    padding: 0.75em 2em; /* Adequate padding */
+    font-weight: 600; /* Bold font */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: all 0.3s ease; /* Transition for smooth effect */
+    text-transform: uppercase; /* Uppercase text */
+    margin: auto; /* Center button */
+    display: block; /* New line */
+    width: fit-content; /* Fit to content */
+  }
+  
+  .carousel__learn-more-button:hover {
+    background-color: #1e90ff; /* Lighter blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+    transform: translateY(-2px); /* Slight raise */
+  }
+  
+  /* Transition effect for fading out images */
+  .carousel__image.fading-out {
+    animation: fadeOut 0.5s ease-in-out forwards; /* Animation for fade out */
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  }
+  

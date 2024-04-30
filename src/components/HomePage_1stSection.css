@@ -1,0 +1,129 @@
+.HomePage_1stSection__container {
+  display: flex;
+  width: 100%;
+  height: 110vh;
+  background-image: url("https://ik.imagekit.io/emtbd/emt_images/images/national-cancer-institute-701-FJcjLAQ-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675730257113");
+  background-size: cover; /* This will cover the entire area */
+  background-position: center; /* This will center the image in the container */
+  background-repeat: no-repeat; /* This ensures the image does not repeat */
+  
+}
+
+
+
+.HomePage_1stSection__writings{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0.5em;
+  margin: 5em;
+  
+}
+
+.HomePage_1stSection__writings-1st_section{
+ background-color: rgba(233, 235, 219, 1);
+ width:55%;
+ z-index:1 ;
+ padding: 1em;
+ margin:1em;
+ box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.HomePage_1stSection__writings-1st_section_textwrapper{
+  width: 95%;
+  margin-left: 1.5em;
+}
+.HomePage_1stSection__writings-1st_section_textwrapper p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight:normal;
+  color:rgb(1, 10, 20);
+  margin-top: 1.5em;
+  line-height: 1.7em;
+}
+
+
+.HomePage_1stSection__writings-2nd_section{
+  background-color: rgba(199, 220, 221, 1);
+  width: 45%;
+  padding: 1em;
+  margin:10em 10em 0em 0em;
+  z-index: 2;
+  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.HomePage_1stSection__writings-2nd_section_textwrapper{
+  width: 95%;
+  margin-left: 1.5em;
+}
+.HomePage_1stSection__writings-2nd_section_textwrapper p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight:normal;
+  color:rgb(1, 10, 20);
+  margin-top: 1.5em;
+  line-height: 1.7em;
+}
+
+
+
+.HomePage_1stSection__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color:rgb(0, 82, 64);
+  margin-bottom: 1em;
+}
+
+.HomePage_1stSection__subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #15027e;
+  margin-bottom: 1.3em;
+  border-bottom: 0.1em solid #035346;
+}
+
+.HomePage_1stSection__description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.0rem;
+  font-weight: normal;
+  color: #222020;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+ 
+  text-align: justify;
+}
+p{
+  margin-top: 0.7em;
+}
+
+@media only screen and (max-width: 1500px){
+
+  .HomePage_1stSection__writings-1st_section{
+    width: 50%;
+  }
+
+  .HomePage_1stSection__writings-2nd_section{
+   width: 50%;
+  }
+  
+  .HomePage_1stSection__writings-1st_section_textwrapper p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+  }
+  
+  
+  
+  
+  .HomePage_1stSection__writings-2nd_section_textwrapper p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+  }
+  
+
+  
+}

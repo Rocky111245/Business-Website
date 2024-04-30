@@ -1,0 +1,120 @@
+/* Import Normalize.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Add additional custom styles below */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8; /* A cooler grey background for the whole page */
+  color: #333; /* Retaining the dark grey for text for better readability */
+}
+
+.Contact_Us-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 1em;
+  margin: 1em;
+  width: 100%;
+}
+
+.contact-us__form-container {
+  width:35%;
+  padding: 2em;
+  margin:2em;
+  background: #e3e3e3; /* Keeping the form container white */
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* A bit stronger shadow for depth */
+}
+
+
+.contact-us__reach-out {
+  width: 45%;
+  padding: 2em;
+  margin:2em;
+  background: #e3e3e3; /* Keeping the form container white */
+  border-radius: 8px;
+  box-shadow: 10px 6px 12px rgba(0, 0, 0, 0.1); /* A bit stronger shadow for depth */
+}
+
+.contact-us__reach-out-section,
+.office_elements {
+  font-size: 1.rem;
+  background: #ffffff; /* Keeping these sections white for a clean look */
+  padding: 0.5em;
+  margin:1em;
+  border-radius: 6px;
+  box-shadow: 5px  6px 6px rgba(0, 0, 0, 0.1);
+ 
+}
+
+
+.contact-us__label {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #0358b3; /* Using the blue as the label color for a pop */
+}
+
+.contact-us__input,
+.contact-us__select,
+.contact-us__textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #0056b3; /* Blue border for inputs */
+  background: #eef1f5; /* A very light blue background for input fields */
+}
+
+.contact-us__submit-button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #17a2b8; /* A cyan color for the button */
+  color: white;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact-us__submit-button:hover {
+  background-color: #138496; /* A darker cyan on hover */
+}
+
+
+
+.ContactUs__icon {
+  color: #130a61; /* Icons color set to cyan */
+  margin-right: 0.5rem;
+}
+
+.contact-us__google-map {
+  width: 100%;
+  height: 80vh; /* Adjust height as needed */
+  
+  border-radius: 8px; /* Match other elements */
+  border: none; /* Remove border */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 985px) {
+  .Contact_Us-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-us__form-container,
+  .contact-us__reach-out {
+    width: 90%;
+  }
+}

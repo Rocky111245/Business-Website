@@ -1,0 +1,161 @@
+/* Import Normalize.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Add additional custom styles below */
+body {
+    margin: 0;
+    padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+
+
+
+
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem;
+  
+  
+}
+
+.navbar__logo-title-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #F0F8FF;
+
+  padding: 1rem; /* Add some padding */
+}
+
+.navbar__logo {
+  width: 6rem;
+  margin-right: 1rem;
+  margin-left:1rem;
+}
+
+.navbar__title {
+  font-size: 2rem;
+  color: navy; /* Make text color white for better visibility */
+  margin-left:1rem;
+}
+
+
+.moto__text {
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Montserrat', sans-serif;
+font-size: 1rem;
+font-weight: bold;
+text-transform: uppercase;
+font-style: italic;
+letter-spacing: 3px;
+text-align: center;
+color: #015049;
+
+    
+}
+
+
+
+.navbar__menu {
+position: relative;
+width: 100%;
+list-style: none;
+display: flex;
+justify-content: space-around;
+background-color: #599696;
+padding: 1.3rem;
+flex-wrap: wrap;
+
+
+
+
+  
+}
+
+.navbar__menu-item {
+  margin-left: 1rem;
+  
+  
+}
+
+.navbar__menu-link {
+  text-decoration: none;
+  color: white; /* blue color */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold; 
+  font-size: 1.0rem; /* added this line */
+  text-transform: uppercase; /* added this line */
+  padding: 1rem;
+  transition: all 0.15s ease-in-out; /* Add a transition */
+}
+
+.navbar__menu-link:hover {
+  padding: 1.3rem; /* Increase padding on hover */
+  color: #4daeae; /* Change text color on hover */
+  background-color: white; /* Change background color on hover */
+  
+}
+.navbar__sub-menu-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.navbar__menu-link i {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out; /* Add a transition */
+
+}
+
+
+.Products_Dropdown{
+  display: none;
+ 
+  list-style: none;
+  font-size: 1.0rem; /* added this line */
+ 
+  transition: all 0.15s ease-in-out; /* Add a transition */
+  
+}
+
+.Products_Dropdown a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold; 
+  font-size: 1.0rem; /* added this line */
+  text-transform: uppercase; /* added this line */
+  padding: 1rem;
+}
+
+.big-arrow{
+  
+  position: absolute;
+  left:31%;
+  top:23%;
+  color: white;
+  cursor:pointer;
+  font-size: 2rem;
+}
+
+.navbar__menu-link-product{
+  position: relative;
+}
+
+
+
+
+
+

@@ -1,0 +1,318 @@
+{
+ "product_description": [
+  {
+   "name": "TRK-2P",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "TRC-NW400",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "TRC-NW8F",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "TRC-NW8",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "TRC-50DX",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "SP-1P",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "SL-D701",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "SL-2G",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "RM-800",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "KR-800/RM-800",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "OP-1H applanation Tonometer",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "OMS-800 / 850",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "OMS-90",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "MYAH",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "LM-8 / 8C",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "Henson 9000",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "DRI OCT Triton",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "DC-4",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "CT-800",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "CL-300",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "CL 100",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "Chronos",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "SL-D301 Digital Slit Lamp",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "CA-800 Topcon",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "CA-200F en lr",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "CA-200",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "Optical biometry & topography system ALADDIN Series",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "ACP-8EM, ACP-8R",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "Maestro2 3D OCT-1 Optical Coherence Tomography",
+   "selection2": "Topcon"
+  },
+  {
+   "name": "3D OCT-1 Maestro",
+   "selection2": "Diagnostic, Eye Care, Optical Coherence Tomography"
+  },
+  {
+   "name": "3D OCT-2000",
+   "selection2": "Diagnostic, Eye Care, Optical Coherence Tomography"
+  },
+  {
+   "name": "3D OCT-2000 FA plus",
+   "selection2": "Diagnostic, Eye Care, Optical Coherence Tomography"
+  },
+  {
+   "name": "OM-4, Ophthalmometer",
+   "selection2": "Diagnostic, Eye Care, Ophthalmo Meters"
+  },
+  {
+   "name": "AIT-16, Instrument Table",
+   "selection2": "Eye Care, Furniture, Tables"
+  },
+  {
+   "name": "ALADDIN, Biometer",
+   "selection2": "Eye Care, Pre- & Post Operative Diagnostics, Surgical"
+  },
+  {
+   "name": "ALE-5100, High Speed lens edgers",
+   "selection2": "Eye Care"
+  },
+  {
+   "name": "ATE-600 / ATE-650, Instrument Table",
+   "selection2": "Eye Care, Furniture, Tables"
+  },
+  {
+   "name": "ATE-800, Instrument Table",
+   "selection2": "Eye Care, Furniture, Tables"
+  },
+  {
+   "name": "CA-200F Corneal Analyser",
+   "selection2": "Eye Care, Pre- & Post Operative Diagnostics, Surgical"
+  },
+  {
+   "name": "CL-300, Lensmeter",
+   "selection2": "Eye Care, Lens Meters & Lens Analysers, Refractive"
+  },
+  {
+   "name": "CT-1(P), non-contact Tonometer",
+   "selection2": "Diagnostic, Eye Care, Tono Meters"
+  },
+  {
+   "name": "CT-800, Non-contact tonometer",
+   "selection2": "Diagnostic, Eye Care, Tono Meters"
+  },
+  {
+   "name": "CV-5000PRO Vision Tester",
+   "selection2": "Eye Care, Refractive, Vision Testers"
+  },
+  {
+   "name": "DRI OCT-1, Atlantis swept source OCT",
+   "selection2": "Diagnostic, Eye Care, Optical Coherence Tomography"
+  },
+  {
+   "name": "Endpoint Management",
+   "selection2": "Eye Care, PASCAL laser systems, Surgical"
+  },
+  {
+   "name": "EZ-200 Advance, Lens Analyser",
+   "selection2": "Eye Care, Lens Meters & Lens Analysers, Refractive"
+  },
+  {
+   "name": "IC-1, Instrument Column",
+   "selection2": "Eye Care, Furniture, Stands & Chairs"
+  },
+  {
+   "name": "IS-1D, Instrument Stand",
+   "selection2": "Eye Care, Furniture, Stands & Chairs"
+  },
+  {
+   "name": "IS-1P, Instrument Stand",
+   "selection2": "Eye Care, Furniture, Stands & Chairs"
+  },
+  {
+   "name": "IS-500E, Instrument Stand",
+   "selection2": "Eye Care, Furniture, Stands & Chairs"
+  },
+  {
+   "name": "IS-600III, Instrument stand",
+   "selection2": "Eye Care, Furniture, Stands & Chairs"
+  },
+  {
+   "name": "IS-600N, Instrument Stand",
+   "selection2": "Eye Care, Furniture, Stands & Chairs"
+  },
+  {
+   "name": "KR-1, Kerato-Refractometer",
+   "selection2": "Eye Care, Kerato Refracto meters, Refractive"
+  },
+  {
+   "name": "KR-1W, Wavefront Analyser",
+   "selection2": "Eye Care, Pre- & Post Operative Diagnostics, Surgical"
+  },
+  {
+   "name": "KR-800 / RM-800, Kerato-Refractometer",
+   "selection2": "Eye Care, Kerato Refracto meters, Refractive"
+  },
+  {
+   "name": "KR-800S, Subjective Kerato-Refractometer",
+   "selection2": "Eye Care, Kerato Refracto meters, Refractive"
+  },
+  {
+   "name": "LM-8, Lensmeter",
+   "selection2": "Eye Care, Lens Meters & Lens Analysers, Refractive"
+  },
+  {
+   "name": "Newport™ e360 Ventilator",
+   "selection2": "E-360, ICU"
+  },
+  {
+   "name": "OM-4, Ophthalmometer",
+   "selection2": "Diagnostic, Eye Care, Ophthalmo Meters"
+  },
+  {
+   "name": "OMS-710, Operation Microscope",
+   "selection2": "Eye Care, Operation Microscopes, Surgical"
+  },
+  {
+   "name": "OMS-800 OFFISS, Operation Microscope",
+   "selection2": "Eye Care, Operation Microscopes, Surgical"
+  },
+  {
+   "name": "OMS-800 Pro, Operation Microscope",
+   "selection2": "Eye Care, Operation Microscopes, Surgical"
+  },
+  {
+   "name": "OMS-90, Operation Microscope",
+   "selection2": "Eye Care, Operation Microscopes, Surgical"
+  },
+  {
+   "name": "PASCAL Streamline 532, Pattern Scanning Laser",
+   "selection2": "Eye Care, PASCAL laser systems, Surgical"
+  },
+  {
+   "name": "PASCAL Streamline 577, Pattern Scanning Laser",
+   "selection2": "Eye Care, PASCAL laser systems, Surgical"
+  },
+  {
+   "name": "PASCAL Synthesis 532 or 577",
+   "selection2": "Eye Care, PASCAL laser systems, Surgical"
+  },
+  {
+   "name": "Pattern Laser Trabeculoplasty (PLT)",
+   "selection2": "Eye Care, PASCAL laser systems, Surgical"
+  },
+  {
+   "name": "SL-2G, Slit Lamp",
+   "selection2": "Diagnostic, Eye Care, Slit Lamps"
+  },
+  {
+   "name": "SL-3G, Slit Lamp",
+   "selection2": "Diagnostic, Eye Care, Slit Lamps"
+  },
+  {
+   "name": "SL-D701, Slit Lamp"
+  },
+  {
+   "name": "SP-1P, Specular microscope"
+  },
+  {
+   "name": "SP-1P, Specular microscope",
+   "selection2": "Eye Care"
+  },
+  {
+   "name": "TRC-50DX Fundus Camera",
+   "selection2": "Diagnostic, Eye Care, Retinal Cameras"
+  },
+  {
+   "name": "TRC-NW400 non-mydriatic fundus camera",
+   "selection2": "Diagnostic, Eye Care, Retinal Cameras"
+  },
+  {
+   "name": "TRC-NW8 non-mydriatic fundus camera",
+   "selection2": "Diagnostic, Eye Care, Retinal Cameras"
+  },
+  {
+   "name": "TRC-NW8F non-mydriatic fundus camera",
+   "selection2": "Diagnostic, Eye Care, Retinal Cameras"
+  },
+  {
+   "name": "TRK-2P, Kerato-Refractometer, Tono-Pachymeter",
+   "selection2": "Diagnostic, Eye Care, Tono Meters"
+  },
+  {
+   "name": "TRK-2P, Kerato-Refractometer, Tono-Pachymeter",
+   "selection2": "Eye Care, Kerato Refracto meters, Refractive"
+  },
+  {
+   "name": "VT-10",
+   "selection2": "Eye Care, Refractive, Vision Testers"
+  }
+ ]
+}

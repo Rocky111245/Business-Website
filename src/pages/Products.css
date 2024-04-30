@@ -1,0 +1,283 @@
+.products_container{
+    display: flex;
+  
+}
+
+
+.sidebar{
+width: 15%;
+display: flex;
+margin-left: 1em;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+text-align: center;
+}
+.sidebar__text-title{
+font-weight: bold;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 1.3rem;
+
+
+}
+
+.FilterBox{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+margin-top: 2em;
+margin-bottom: 3em;
+padding-bottom: 2em;
+
+width: 14em;
+background-color:  #cce8e8;
+border-radius: 10px;
+box-shadow: 0px 5px 5px 5px #ccc;
+background-color: #e6f3f3;
+}
+   
+.FilterElement{
+       margin: 0.6em;
+       
+       
+
+        }
+.FilterHead{
+      margin: auto;
+      font-size: 1.6rem;
+      color: navy;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      padding: 1em 0em 0.5em 0em;
+      
+
+}
+
+/* Add a soft warm color to the checkbox */
+.FilterElement:checked {
+    background-color: rgba(255, 153, 51, 0.2);
+    }
+    
+    /* Add a sleek design to the checkbox */
+    .FilterElement {
+        
+        width: 1.2em; /* increased from 20px */
+        height: 1.2em; /* increased from 20px */
+        border: 2px solid rgb(4, 77, 90);
+        border-radius: 5px;
+        
+        
+        transition: all 0.2s ease-in-out;
+    }
+    
+    /* Add a sleek design to the tickmark */
+    .FilterElement:before {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #1e90ff;
+    border-bottom: 2px solid #1e90ff;
+    left: 6px;
+    top: 6px;
+    transform: rotate(45deg);
+    }
+    
+    /* Add a hover effect */
+    .FilterElement:hover {
+    cursor: pointer;
+    border-color: #1e90ff;
+    }
+    
+    .FilterElement:hover:before {
+    opacity: 0.8;
+    }
+    
+    /* Add a checkmark animation */
+    .FilterElement:checked {
+    animation: checkmark 0.2s ease-in-out;
+    }
+    
+    @keyframes checkmark {
+    0% {
+    transform: scale(0);
+    }
+    20% {
+    transform: scale(1.5);
+    }
+    100% {
+    transform: scale(1);
+    }
+    }
+    
+    /* Add a focus effect */
+    .FilterElement:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 153, 51, 0.2);
+    }
+    
+    /* Add a disabled effect */
+    .FilterElement:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    }
+    
+    .FilterElement:disabled:before {
+    border-color: #ccc;
+    }
+    
+    .FilterElement:disabled:hover {
+    border-color: #ccc;
+    }
+    
+    .FilterElement:disabled:hover:before {
+    opacity: 0.5;
+    }
+    
+    
+    /* Add a active effect */
+    .FilterElement:active {
+    transform: scale(0.95);
+    }
+    
+    .FilterElement:active:before {
+    transform: rotate(40deg);
+    }
+    
+    /* Add a global styles */
+    .filtertext {
+    font-size: 16px;
+    color: #333;
+    margin-left: 10px;
+    }
+    
+   
+    
+    /* Add a media query */
+    @media (max-width: 768px) {
+    .sidebar {
+    width: 100%;
+    }
+    }
+    
+    /* Add a media query */
+    @media (max-width: 576px) {
+    .FilterBox {
+    width: 100%;
+    }
+    }
+.filtertext{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1em;
+    
+}
+.FilterElement:hover{
+       cursor: pointer;
+   }  
+
+   
+
+
+
+.products__main{
+    width: 85%;
+    margin-left: 7em;
+    
+}
+
+.products_main_all{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.products__main-text{
+
+display: flex;
+margin: auto;
+justify-content: center;
+align-items: center;
+
+padding: 0em;
+margin-bottom: 2em;
+background-color: rgb(215, 249, 250);
+border-radius: 10px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.product-card{
+display: flex;
+flex-direction: column;
+text-align: left;
+margin: 1em;
+transition: all 0.7s ease;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+
+}
+
+.product-card:hover{
+    padding:1em;
+    box-shadow: 0px 5px 15px 5px;
+    
+
+}
+
+
+.images{
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 1em;
+    margin: 1em 1em 0em 1em;
+
+}
+.images_title{
+    margin-left: 1em;
+}
+.images_description{
+    margin-left: 1em;
+}
+
+.download{
+margin: 1.5em 0em 1em 1em;
+max-width: 100%;
+background-color: black;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: wheat;
+padding: 0.4em;
+border-radius: 5px;
+transition: 0.5s ease;
+cursor: pointer;
+
+}
+.download:hover{
+  
+    background-color: wheat;
+    color: black;
+
+}
+  
+  .product_form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .product_input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 1em;
+    box-sizing: border-box;
+    border: 2px solid rgb(3, 124, 133);
+    border-radius: 4px;
+    font-size: 16px;
+
+  }
+  
+
+
+
+
+
+
+
+ 

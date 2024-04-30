@@ -1,0 +1,74 @@
+/* Import Normalize.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Add additional custom styles below */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+.subfooter__container{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    
+
+}
+.subfooter__image{
+    display: block;
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    opacity: 0.7;
+  
+    
+}
+
+
+
+.subfooter__sub-container{
+position: absolute;
+top:25%;
+left: 25%;
+width: 50%;
+height: 50%;
+background: linear-gradient(to right, rgba(3, 58, 55, 0.4), rgba(2, 36, 36, 0.8));
+color: aliceblue;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+border: 1px solid goldenrod;
+border-radius: 5px;
+
+  
+}
+
+.subfooter__title{
+margin-right: 5em;
+font-size: 1.5rem;
+font-weight: 200;
+font-family: Arial, Helvetica, sans-serif;
+color: antiquewhite;
+}
+.subfooter__button{
+ background-color: black;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ color: wheat;
+ padding: 0.8em;
+ border-radius: 5px;
+ transition: 0.5s ease;
+}
+
+.subfooter__button:hover{
+    color: black; 
+    background: linear-gradient(to right, #daa520, #ffa600); 
+    padding: 0.7em;
+    
+    
+      
+      
+}
