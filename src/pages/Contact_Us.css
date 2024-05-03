@@ -4,17 +4,6 @@
 
 /* Add additional custom styles below */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f0f4f8; /* A cooler grey background for the whole page */
-  color: #333; /* Retaining the dark grey for text for better readability */
-}
 
 .Contact_Us-container {
   display: flex;

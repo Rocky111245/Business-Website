@@ -65,7 +65,6 @@ function Products(){
         </div>
 
         <div className="products__main">
-            <h2 className="products__main-text">Our Products</h2>
             <div className="products_main_all">
             {displayedProducts.map(product => (
                 <ProductCard 

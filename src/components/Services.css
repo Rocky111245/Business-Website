@@ -1,0 +1,77 @@
+/* Services.css */
+.services__container {
+    background-color: #ffffff;  /* Ensure a clean, white background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    padding: 2em;
+    font-family: 'Roboto', sans-serif;  /* Unified font for clean design */
+}
+
+.services__heading-container {
+    flex-basis: 20%;  /* Adjust this to control the spacing */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50vh;
+ 
+   
+}
+
+.services__heading {
+    font-size: 2.5rem;
+    color: #10375c;
+    margin: 0 20px;
+}
+
+.services__features-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 40px;  /* Adjust padding to visually separate from the border */
+}
+
+.services__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 310px;
+    margin: 10px;
+    background: #f9f9f9;  /* Light background for each card */
+    padding: 20px;
+    border-radius: 10px;  /* Rounded corners for a modern look */
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.1);  /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth transitions for hover effects */
+}
+
+.services__feature:hover {
+    transform: translateY(-5px);  /* Slight lift effect */
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);  /* Increased shadow for lifted effect */
+}
+
+.services__icon {
+    margin-bottom: 15px;
+    font-size: 50px;  /* Ensuring uniform icon size */
+    color: #4a90e2;  /* Unified color for icons for a sleek look */
+}
+
+.services__content h2 {
+    margin: 5px 0;
+    color: #10375c;
+    font-size: 1.5rem;
+}
+
+.services__content p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+@media (min-width: 1024px) {
+    .services__feature {
+        flex-basis: 25%;  /* Adjust according to the number of features */
+    }
+}

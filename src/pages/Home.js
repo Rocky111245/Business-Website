@@ -8,11 +8,13 @@ import PhotoSection from '../components/Photo_Section';
 import Homesection2 from '../components/Homesection2';
 import SubFooter from '../components/SubFooter';
 import products from '../images_description.json';
+import Services from '../components/Services';
 import Carousel from '../components/Carousel';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faArrowAltCircleRight, faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons'
 import HomePage_1stSection from '../components/HomePage_1stSection';
 import HomePage_2ndSection from '../components/HomePage_2ndSection';
+import WhatsAppIcon from '../components/WhatsAppIcon';
 library.add(faArrowAltCircleRight, faArrowAltCircleLeft)
 
 
@@ -23,10 +25,12 @@ function Home() {
   const slides = products.slice(0,5);
   return (<div className='container'>
   <Navbar></Navbar>
+  <WhatsAppIcon></WhatsAppIcon>
   <HomePage_1stSection></HomePage_1stSection>
   <PhotoSection></PhotoSection>
   <HomePage_2ndSection></HomePage_2ndSection>
   <Homesection2></Homesection2>
+  <Services></Services>
   <Carousel></Carousel>
   <Home1stSection></Home1stSection>
   <SubFooter></SubFooter>

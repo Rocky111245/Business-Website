@@ -12,9 +12,6 @@ body {
 }
 
 
-
-
-
 .navbar {
   display: flex;
   flex-direction: column;
@@ -40,6 +37,7 @@ body {
 }
 
 .navbar__title {
+  font-family:Arial, Helvetica, sans-serif;
   font-size: 2rem;
   color: navy; /* Make text color white for better visibility */
   margin-left:1rem;
@@ -90,9 +88,9 @@ flex-wrap: wrap;
 .navbar__menu-link {
   text-decoration: none;
   color: white; /* blue color */
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold; 
-  font-size: 1.0rem; /* added this line */
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: normal; 
+  font-size: 1.1rem; /* added this line */
   text-transform: uppercase; /* added this line */
   padding: 1rem;
   transition: all 0.15s ease-in-out; /* Add a transition */
@@ -153,6 +151,13 @@ flex-wrap: wrap;
 .navbar__menu-link-product{
   position: relative;
 }
+
+
+.Products_Dropdown.visible {
+  display: block;
+  
+  transition: all 0.3s ease; }
+
 
 
 

@@ -2,6 +2,7 @@
 import React,{useState} from 'react';
 import './Navbar.css';
 import { RxChevronRight } from "react-icons/rx";
+import '../utilities/fonts/fonts.css';
 
 
 

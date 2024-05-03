@@ -1,7 +1,7 @@
 .Homesection2_container{
     width: 100%;
     padding: 4em 0; /* Added top and bottom padding */
-    background-color: #e6f3f3;
+    background-color: #ffffff ;
     box-sizing: border-box;
 }
 
@@ -21,6 +21,7 @@
     text-align: center;
     margin-bottom: 2em; /* Space between title and blocks */
     text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .Homesection2_blocks {

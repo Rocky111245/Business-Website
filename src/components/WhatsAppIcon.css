@@ -1,0 +1,20 @@
+.whatsapp-icon {
+    position: fixed;
+    right: 20px; /* Adjust this value to move the icon left or right */
+    bottom: 150px; /* Adjust this value to move the icon up or down */
+    width: 60px;
+    height: 60px;
+    background-color: #25D366; /* WhatsApp brand color */
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    text-decoration: none;
+    z-index: 1000; /* Ensure it floats above other content */
+}
+
+.whatsapp-icon:hover {
+    background-color: #128C7E; /* Darker shade on hover */
+}

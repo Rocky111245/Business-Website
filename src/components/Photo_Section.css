@@ -1,6 +1,6 @@
 .photo-section-container{
     height: 100vh;
-    background-color: #e6f3f3;
+    background-color: #ffffff;
     text-align: center; /* Ensures the heading is centered */
     margin-bottom: 2rem; /* Spacing before the photo section starts */
 }
@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: #e6f3f3; /* Soft background color */
+    background-color: #ffffff; /* Soft background color */
   }
   
   .photo-section__frame {

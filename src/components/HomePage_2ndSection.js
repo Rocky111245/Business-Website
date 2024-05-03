@@ -26,6 +26,7 @@ const HomePage_2ndSection = () => {
 
   return (
     <div className="HomePage_2ndSection__container">
+    
       <img
         className="HomePage_2ndSection-image"
         src="https://ik.imagekit.io/emtbd/emt_images/images/Screenshot_2023-02-07_044037.png?ik-sdk-version=javascript-1.4.3&updatedAt=1675773664532"

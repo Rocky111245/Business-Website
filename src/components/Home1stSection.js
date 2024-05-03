@@ -17,7 +17,8 @@ const Home1stSection = ()=>{
                    
                 <div className='home-section__container-section2_background-text'>
                     <h3 className='home-section__title2'>Mission & Vision</h3>
-                    <h4 className='home-section__subtitle2'>Our Mission is to be the most reliable and committed business partner in the sale of quality medical equipment, providing responsive after sales service, and solutions to the needs of healthcare providers. Our Vision is to be the leading bio- medical equipment distributor and seller in Bangladesh.</h4>
+                    <h4 className='home-section__subtitle2'><p>Our Mission is to be the most reliable and committed business partner in the sale of quality medical equipment, providing responsive after sales service, and solutions to the needs of healthcare providers. </p>
+                    <p>Our Vision is to be the leading bio- medical equipment distributor and seller in Bangladesh.</p></h4>
                     
                     </div>
     </div>
