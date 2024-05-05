@@ -1,109 +1,121 @@
-/* Import Normalize.css */
+/* Import Normalize.css and Google Fonts */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
-/* Add additional custom styles below */
+/* Specific styles for Contact Us page */
+.Contact_Us {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    background: #f4f4f9; /* Subtle background color */
+}
 
-
+/* Adjusting the entire container for symmetry and padding */
 .Contact_Us-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 1em;
-  margin: 1em;
-  width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center; /* Align items vertically for better visual alignment */
 }
 
 .contact-us__form-container {
-  width:35%;
-  padding: 2em;
-  margin:2em;
-  background: #e3e3e3; /* Keeping the form container white */
-  border-radius: 8px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* A bit stronger shadow for depth */
+    width: 45%;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    margin: 1rem;
 }
 
+.contact-us__form__succeeded {
+    padding: 1.5rem;
+    margin-top: 1rem;
+    background-color: #e8f0fe; /* Subtle blue background */
+    color: #0366d6; /* Darker blue text color for contrast */
+    font-size: 1.2rem; /* Larger font size for better readability */
+    text-align: center; /* Center the text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: none; /* Remove any box shadow */
+    border: 1px solid #b6d4fe; /* Soft blue border */
+}
 
 .contact-us__reach-out {
-  width: 45%;
-  padding: 2em;
-  margin:2em;
-  background: #e3e3e3; /* Keeping the form container white */
-  border-radius: 8px;
-  box-shadow: 10px 6px 12px rgba(0, 0, 0, 0.1); /* A bit stronger shadow for depth */
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    margin: 1rem;
 }
 
-.contact-us__reach-out-section,
-.office_elements {
-  font-size: 1.rem;
-  background: #ffffff; /* Keeping these sections white for a clean look */
-  padding: 0.5em;
-  margin:1em;
-  border-radius: 6px;
-  box-shadow: 5px  6px 6px rgba(0, 0, 0, 0.1);
- 
+/* Form styling */
+.contact-us__form-group {
+    margin-bottom: 1.5rem;
 }
-
 
 .contact-us__label {
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  color: #0358b3; /* Using the blue as the label color for a pop */
+    font-weight: 700; /* Bold labels */
+    margin-bottom: 0.5rem;
+    color: #000000; /* Accent color for labels */
 }
 
-.contact-us__input,
-.contact-us__select,
+.contact-us__input, .contact-us__select, .contact-us__textarea {
+    margin-top: 0.5em;
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 5px;
+    border: 1px solid #007BFF; /* Accent border */
+    background: #eef1f7; /* Subtle background */
+}
+
 .contact-us__textarea {
-  width: 100%;
-  padding: 0.75rem;
-  margin-bottom: 1rem;
-  border-radius: 4px;
-  border: 1px solid #0056b3; /* Blue border for inputs */
-  background: #eef1f5; /* A very light blue background for input fields */
+    height: 150px; /* Fixed height for textarea */
 }
 
 .contact-us__submit-button {
-  width: 100%;
-  padding: 1rem;
-  border-radius: 4px;
-  background-color: #17a2b8; /* A cyan color for the button */
-  color: white;
-  border: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 1rem;
-  font-weight: 600;
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    width: 100%;
+    padding: 1rem;
+    background-color: #0056b8; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .contact-us__submit-button:hover {
-  background-color: #138496; /* A darker cyan on hover */
+    background-color: #003a70; /* Darker blue on hover */
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .Contact_Us-container {
+        flex-direction: column;
+    }
+    .contact-us__form-container, .contact-us__reach-out {
+        width: 90%;
+    }
+}
 
-
+/* Icons and reach out section adjustments */
 .ContactUs__icon {
-  color: #130a61; /* Icons color set to cyan */
-  margin-right: 0.5rem;
+    margin-bottom: 10px; /* Space between icon and text */
+    color: #007BFF; /* Icon color */
+}
+
+.office_elements {
+    font-size: 1.1rem;
+    margin-bottom: 1rem; /* Space between sections */
 }
 
 .contact-us__google-map {
-  width: 100%;
-  height: 80vh; /* Adjust height as needed */
-  
-  border-radius: 8px; /* Match other elements */
-  border: none; /* Remove border */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive design */
-@media (max-width: 985px) {
-  .Contact_Us-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .contact-us__form-container,
-  .contact-us__reach-out {
-    width: 90%;
-  }
+    width: 100%;
+    height: 80vh;
+    border-radius: 8px;
+    margin-top: 1rem;
 }

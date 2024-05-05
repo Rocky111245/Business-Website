@@ -17,15 +17,13 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0rem;
-  
-  
 }
 
 .navbar__logo-title-container {
   width: 100%;
   display: flex;
   align-items: center;
-  background: #F0F8FF;
+  background: #ffffff;
 
   padding: 1rem; /* Add some padding */
 }
@@ -69,35 +67,28 @@ width: 100%;
 list-style: none;
 display: flex;
 justify-content: space-around;
-background-color: #599696;
-padding: 1.3rem;
+background-color: #2f2b49;
+padding: 0.8em;
 flex-wrap: wrap;
-
-
-
-
-  
 }
 
 .navbar__menu-item {
   margin-left: 1rem;
-  
-  
 }
 
 .navbar__menu-link {
   text-decoration: none;
   color: white; /* blue color */
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: monospace;
   font-weight: normal; 
-  font-size: 1.1rem; /* added this line */
+  font-size: 1.2rem; /* added this line */
   text-transform: uppercase; /* added this line */
-  padding: 1rem;
+  padding: 0.5rem;
   transition: all 0.15s ease-in-out; /* Add a transition */
 }
 
 .navbar__menu-link:hover {
-  padding: 1.3rem; /* Increase padding on hover */
+  padding: 1.0rem; /* Increase padding on hover */
   color: #4daeae; /* Change text color on hover */
   background-color: white; /* Change background color on hover */
   
@@ -157,10 +148,3 @@ flex-wrap: wrap;
   display: block;
   
   transition: all 0.3s ease; }
-
-
-
-
-
-
-
