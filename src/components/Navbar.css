@@ -23,8 +23,8 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  background: #ffffff;
-
+  background: #F5F5F7;
+  margin-left: 8em;
   padding: 1rem; /* Add some padding */
 }
 
@@ -67,8 +67,8 @@ width: 100%;
 list-style: none;
 display: flex;
 justify-content: space-around;
-background-color: #2f2b49;
-padding: 0.8em;
+background-color:navy;
+padding: 0.5em;
 flex-wrap: wrap;
 }
 
@@ -80,16 +80,16 @@ flex-wrap: wrap;
   text-decoration: none;
   color: white; /* blue color */
   font-family: monospace;
-  font-weight: normal; 
-  font-size: 1.2rem; /* added this line */
+  font-weight: bold; 
+  font-size: 1.1rem; /* added this line */
   text-transform: uppercase; /* added this line */
-  padding: 0.5rem;
-  transition: all 0.15s ease-in-out; /* Add a transition */
+  padding: 0.6em;
+  transition: all 0.20s ease-in-out; /* Add a transition */
 }
 
 .navbar__menu-link:hover {
-  padding: 1.0rem; /* Increase padding on hover */
-  color: #4daeae; /* Change text color on hover */
+  padding: 0.6em; /* Increase padding on hover */
+  color: #053d7c; /* Change text color on hover */
   background-color: white; /* Change background color on hover */
   
 }
@@ -101,50 +101,3 @@ flex-wrap: wrap;
   font-weight: 600;
   text-transform: uppercase;
 }
-.navbar__menu-link i {
-  margin-left: 0.5rem;
-  font-size: 1rem;
-  transition: all 0.3s ease-in-out; /* Add a transition */
-
-}
-
-
-.Products_Dropdown{
-  display: none;
- 
-  list-style: none;
-  font-size: 1.0rem; /* added this line */
- 
-  transition: all 0.15s ease-in-out; /* Add a transition */
-  
-}
-
-.Products_Dropdown a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold; 
-  font-size: 1.0rem; /* added this line */
-  text-transform: uppercase; /* added this line */
-  padding: 1rem;
-}
-
-.big-arrow{
-  
-  position: absolute;
-  left:31%;
-  top:23%;
-  color: white;
-  cursor:pointer;
-  font-size: 2rem;
-}
-
-.navbar__menu-link-product{
-  position: relative;
-}
-
-
-.Products_Dropdown.visible {
-  display: block;
-  
-  transition: all 0.3s ease; }

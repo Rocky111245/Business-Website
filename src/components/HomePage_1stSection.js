@@ -16,7 +16,7 @@ return (
         </div>
         <div className='HomePage_1stSection__writings-2nd_section'>
           <div className='HomePage_1stSection__writings-2nd_section_textwrapper'>
-            <h2 className='HomePage_1stSection__title'>OUR TEAM</h2>
+            <h2 className='HomePage_1stSection__title'>Our Team</h2>
             <h4 className='HomePage_1stSection__subtitle'>One of the most experienced team in the country </h4>
             <h5 className='HomePage_1stSection__description'><p>Our team is led by our Managing Director, Engineer Mohammad Taufique Hasan who has extensive experience in the industry with over 30 years of experience.</p>
                 <p>Dr. Nazrul Islam oversees the general operations of the company and heads the Nephrology department representing Baxter Inc.</p>

@@ -11,7 +11,7 @@ const Home1stSection = ()=>{
     
                 <div className='home-section__container-section1_background-text'>
                     <h3 className='home-section__title1'> Our Values</h3>
-                    <h5 className='home-section__subtitle1'>Excellence,Integrity,Quality,Affordability,Responsibility, and Reliability are our core values</h5>
+                    <h5 className='home-section__subtitle1'>Excellence, Integrity, Quality, Affordability, Responsibility, and Reliability are our core values.</h5>
                 </div>
                 <img className='home-section_image2'  src='https://ik.imagekit.io/emtbd/emt_images/images/analysis-2030265.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673883338760'></img>
                    

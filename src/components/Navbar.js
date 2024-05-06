@@ -11,8 +11,8 @@ const Navbar = () => {
   return (
     <nav className="navbar">
   <div className="navbar__logo-title-container">
-    <h1 className="navbar__title">Evolution Medical Technologies</h1>
     <img src="https://ik.imagekit.io/emtbd/emt_images/emt_logo/EMT-green.png?ik-sdk-version=javascript-1.4.3&updatedAt=1673822808512" className="navbar__logo" />
+    <h1 className="navbar__title">Evolution Medical Technologies</h1>
     <h4 class="moto__text">Medical Technology.Delivered.</h4>
   </div>
   <ul className="navbar__menu">
@@ -31,10 +31,6 @@ const Navbar = () => {
     <li className="navbar__menu-item">
       <a href="/Contact_Us" className="navbar__menu-link">Contact Us</a>
     </li>
-    <li className="navbar__menu-item">
-      <a href="/Medical_Blogs" className="navbar__menu-link">Medical Blogs</a>
-    </li>
-    
   </ul>
 </nav>
 

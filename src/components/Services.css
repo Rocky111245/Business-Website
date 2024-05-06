@@ -4,19 +4,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50vh;
+    height: 70vh;
     padding: 2em;
     font-family: 'Roboto', sans-serif;  /* Unified font for clean design */
 }
 
 .services__heading-container {
-    flex-basis: 20%;  /* Adjust this to control the spacing */
+    margin-left: 2em;
+    flex-basis: 30%;  /* Adjust this to control the spacing */
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 50vh;
- 
-   
+    height: 70vh;
 }
 
 .services__heading {
@@ -28,9 +27,10 @@
 .services__features-container {
     flex-grow: 1;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding-left: 40px;  /* Adjust padding to visually separate from the border */
+    /* Adjust padding to visually separate from the border */
 }
 
 .services__feature {
@@ -38,10 +38,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    line-height: 3rem;
     max-width: 310px;
-    margin: 10px;
+    margin: 0.5em;
     background: #f9f9f9;  /* Light background for each card */
-    padding: 20px;
+    padding: 1em;
     border-radius: 10px;  /* Rounded corners for a modern look */
     box-shadow: 5px 10px 10px rgba(0,0,0,0.1);  /* Subtle shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth transitions for hover effects */
@@ -70,8 +71,28 @@
     line-height: 1.6rem;
 }
 
-@media (min-width: 1024px) {
-    .services__feature {
-        flex-basis: 25%;  /* Adjust according to the number of features */
+@media only screen and (max-width: 1600px) {
+
+    .services__container {
+        height: 100vh;
+
+
+
+
     }
+
+    .services__heading {
+        font-size: 2.0rem;
+        color: #10375c;
+        margin: 0 20px;
+    }
+
+    .services__feature{
+      font-size: 1.5rem;
+    
+    }
+
+   
+    
 }
+    

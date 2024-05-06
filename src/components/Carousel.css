@@ -1,7 +1,7 @@
+/* Carousel Main Styles */
 .slider {
   overflow: hidden;
   position: relative;
-  background-color: white !important;
   width: 100%;
   height: 70vh;
   margin: auto; /* Center the slider if necessary */
@@ -11,6 +11,8 @@
   display: flex;
   width: 100%;
   height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide {
@@ -22,28 +24,24 @@
 }
 
 .carousel__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 20px;
   width: 80%;
-  height: 70vh;
   max-width: 700px;
   text-align: center;
 }
 
 .carousel__image {
-  width: 100%;
+ 
   height: 30vh;
-  margin-bottom: 1em;
   object-fit: contain;
 }
 
+/* Navigation Arrows */
 .left-arrow, .right-arrow {
   position: absolute;
-  top: 50%;
+  top: 45%;
   transform: translateY(-50%);
   z-index: 10; /* Ensure arrows are clickable */
   cursor: pointer;
@@ -59,18 +57,33 @@
   right: 10px;
 }
 
+/* Buttons and Text Styling with Custom Fonts */
 .carousel__learn-more-button {
+  font-family: 'Guardian Sans Medium', sans-serif;
   margin-top: 2em;
-  font-size: 1.2rem;
-  background-color: #163caf;
+  padding: 10px 50px;
+  background-color: #4169E1;
   color: white;
   border: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .carousel__learn-more-button:hover {
-  background-color: #059980;
+  background-color: #4ca06f;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.carousel__title {
+  font-family: 'Guardian Sans Bold', serif;
+  font-size: 1.6rem; /* Slightly larger font size for title */
+  color: #10375c;
+  padding: 0.5em;
+}
+
+.carousel__description {
+  font-family: 'Guardian Sans Light', serif;
+  font-size: 1.2rem;
+  color: #666; /* Lighter text color for descriptions */
 }

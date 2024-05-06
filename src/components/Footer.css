@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0.5rem;
-  background-color: #161515; /* Changed to a black background */
+  background-color: #252323; /* Changed to a black background */
   color: #fff; /* Text color set to white for all child elements */
 }
 
@@ -27,12 +27,14 @@
 }
 
 .footer__title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem; 
   font-weight: bold; 
   margin: 0;
 }
 
 .footer__motto {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
   opacity: 0.8;
 }
@@ -47,7 +49,7 @@
 
 .footer__social-icon {
   font-size: 2rem;
-  color: rgb(5, 34, 194);
+  color: rgb(239, 240, 243);
 }
 
 .footer__copyright {

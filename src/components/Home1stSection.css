@@ -35,6 +35,7 @@
 
 .home-section__container-section1_background-text{
   width: 50%;
+  text-align: center;
   min-width: 300px;
   padding: 0.5em;
   display: flex;
@@ -53,7 +54,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: justify;
+  text-align: center;
   background-color: rgba(175, 201, 204, 0.7);
   height: 50vh;
 }

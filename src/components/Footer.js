@@ -13,7 +13,7 @@ const Footer = () => {
         </div>
         <p className="footer__motto">MEDICAL TECHNOLOGY, DELIVERED</p>
         <div className="footer__social-icons">
-          <a href="https://www.facebook.com/YourPage" className="footer__social-link">
+          <a href="https://www.facebook.com/p/National-Trading-Syndicate-Ltd-100044507965994/" target='_blank' className="footer__social-link">
             <FontAwesomeIcon icon={faFacebook} className="footer__social-icon" />
           </a>
           {/* Additional social icons can be placed here */}

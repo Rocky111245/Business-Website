@@ -1,0 +1,24 @@
+/* Commanding Bar Styles */
+.commanding-bar {
+    width: 100%;
+    height: 20vh; /* Adjust height as needed */
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Add padding for content */
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  /* Gradient from blue to light blue to white (Horizontal and Vertical) */
+  .commanding-bar-default {
+    background: linear-gradient(to right, #0000FF, #87CEFA, #FFFFFF), linear-gradient(to bottom, #87CEFA 0%, #FFFFFF 100%);
+    background-blend-mode: multiply; /* Use blend mode to mix the horizontal and vertical gradients */
+  }
+  
+  /* Designer's choice gradient with vertical fade to white */
+  .commanding-bar-designer {
+    background: linear-gradient(to right, #6a11cb, #2575fc), linear-gradient(to bottom, #2575fc 0%, #FFFFFF 100%);
+    background-blend-mode: multiply; /* Blend the horizontal and vertical gradients */
+  }
+  

@@ -1,51 +1,39 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
 .HomePage_1stSection__container {
   display: flex;
   width: 100%;
-  height: 110vh;
-  background-image: url("https://ik.imagekit.io/emtbd/emt_images/images/national-cancer-institute-701-FJcjLAQ-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1675730257113");
-  background-size: cover; /* This will cover the entire area */
-  background-position: center; /* This will center the image in the container */
-  background-repeat: no-repeat; /* This ensures the image does not repeat */
-  
+  height: 100vh; /* Adjusted for better responsiveness */
+  background-image: url("https://ik.imagekit.io/emtbd/emt_images/images/DALL_E%202024-05-05%2015.56.56%20-%20Create%20a%20professional%20and%20abstract%20animated%20background%20suitable%20for%20a%20medical%20company's%20website.%20The%20animation%20should%20feature%20soft%20light%20colors,%20conve.webp?updatedAt=1714895911063");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-
-
-.HomePage_1stSection__writings{
+.HomePage_1stSection__writings {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
   padding: 0.5em;
   margin: 5em;
-  
 }
 
-.HomePage_1stSection__writings-1st_section{
- background-color: rgba(233, 235, 219, 1);
- width:55%;
- z-index:1 ;
- padding: 1em;
- margin:1em;
- box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.3);
+/* Style for the first section */
+.HomePage_1stSection__writings-1st_section {
+  background-color: #d3e1e6; /* Light background for readability */
+  width:55%;
+  z-index:1 ;
+  padding: 1em;
+  margin:1em;
+  box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.HomePage_1stSection__writings-1st_section_textwrapper{
-  width: 95%;
-  margin-left: 1.5em;
-}
-.HomePage_1stSection__writings-1st_section_textwrapper p{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.1rem;
-  font-weight:normal;
-  color:rgb(1, 10, 20);
-  margin-top: 1.5em;
-  line-height: 1.7em;
-}
-
-
-.HomePage_1stSection__writings-2nd_section{
-  background-color: rgba(199, 220, 221, 1);
+/* Style for the second section */
+.HomePage_1stSection__writings-2nd_section {
+  background-color: #f1f1e5; /* Same as first for consistency */
   width: 45%;
   padding: 1em;
   margin:10em 10em 0em 0em;
@@ -53,77 +41,53 @@
   box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.HomePage_1stSection__writings-2nd_section_textwrapper{
-  width: 95%;
-  margin-left: 1.5em;
-}
-.HomePage_1stSection__writings-2nd_section_textwrapper p{
+
+
+/* Common styles for text wrappers */
+/* Moderate Version */
+.HomePage_1stSection__writings-1st_section_textwrapper,
+.HomePage_1stSection__writings-2nd_section_textwrapper {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.1rem;
-  font-weight:normal;
-  color:rgb(1, 10, 20);
+  font-size: 1.2rem; /* Slightly larger for better readability */
+  color: rgb(1, 10, 20);
   margin-top: 1.5em;
-  line-height: 1.7em;
+  line-height: 2em; /* Increased line spacing */
 }
 
-
-
+/* Title styling */
 .HomePage_1stSection__title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.8rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px; /* Larger for emphasis */
   font-weight: bold;
-  color:rgb(0, 82, 64);
-  margin-bottom: 1em;
+  color: #005792; /* Dark blue for professional tone */
 }
 
+/* Subtitle styling */
 .HomePage_1stSection__subtitle {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.4rem;
-  font-weight: normal;
-  color: #15027e;
-  margin-bottom: 1.3em;
-  border-bottom: 0.1em solid #035346;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #02475e; /* Subdued blue for subtlety */
+  margin-bottom: 10px;
 }
+
+
 
 .HomePage_1stSection__description {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.0rem;
-  font-weight: normal;
-  color: #222020;
-  line-height: 1.5;
-  letter-spacing: 0.1rem;
- 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2rem; /* Maintaining base font size */
+  color: #333333; /* Standard dark grey */
   text-align: justify;
+  line-height: 1.8; /* Increased from 1.6 for better readability */
 }
-p{
-  margin-top: 0.7em;
-}
-
-@media only screen and (max-width: 1500px){
-
-  .HomePage_1stSection__writings-1st_section{
-    width: 50%;
+/* Media queries for responsiveness */
+@media (max-width: 960px) {
+  .HomePage_1stSection__writings {
+    flex-direction: column;
   }
 
-  .HomePage_1stSection__writings-2nd_section{
-   width: 50%;
+  .HomePage_1stSection__writings-1st_section,
+  .HomePage_1stSection__writings-2nd_section {
+    width: 100%; /* Full width for smaller screens */
   }
-  
-  .HomePage_1stSection__writings-1st_section_textwrapper p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.5em;
-  }
-  
-  
-  
-  
-  .HomePage_1stSection__writings-2nd_section_textwrapper p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.5em;
-  }
-  
-
-  
 }
