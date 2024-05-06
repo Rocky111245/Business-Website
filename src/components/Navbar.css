@@ -24,14 +24,13 @@ body {
   display: flex;
   align-items: center;
   background: #F5F5F7;
-  margin-left: 8em;
   padding: 1rem; /* Add some padding */
 }
 
 .navbar__logo {
   width: 6rem;
   margin-right: 1rem;
-  margin-left:1rem;
+  margin-left:5em;
 }
 
 .navbar__title {

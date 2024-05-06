@@ -3,7 +3,7 @@ import carouselImages from "../images_description.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleLeft, faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 import "./Carousel.css";
-import Products from "../pages/Products";
+
 
 function Carousel() {
   const [current, setCurrent] = useState(1);  // Start from the first actual image, not the "fake" last

@@ -32,7 +32,7 @@
     padding: 1.5rem;
     margin-top: 1rem;
     background-color: #e8f0fe; /* Subtle blue background */
-    color: #0366d6; /* Darker blue text color for contrast */
+    color: #044997; /* Darker blue text color for contrast */
     font-size: 1.2rem; /* Larger font size for better readability */
     text-align: center; /* Center the text */
     border-radius: 10px; /* Rounded corners */
@@ -112,6 +112,22 @@
     font-size: 1.1rem;
     margin-bottom: 1rem; /* Space between sections */
 }
+
+.office_elements h4 {
+    font-family: 'Guardian Sans Bold', serif;
+    font-size: 1.2rem; /* Slightly larger font size for title */
+    color: #10375c;
+    margin-bottom: 1rem; /* Space between sections */
+}
+
+.office_elements p {
+    font-family: 'Guardian Sans Light', serif;
+    margin-bottom: 1em;
+    font-size: 1.2rem;
+    color: #080808; /* Lighter text color for descriptions */
+}
+
+
 
 .contact-us__google-map {
     width: 100%;

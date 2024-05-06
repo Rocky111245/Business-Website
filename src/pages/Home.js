@@ -34,9 +34,6 @@ function Home() {
   <Carousel></Carousel>
   <Home1stSection></Home1stSection>
   <SubFooter></SubFooter>
- 
-
-  
   <Footer></Footer>
   </div>
   

@@ -1,37 +1,33 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Navbar from '../components/Navbar';
 import Footer from "../components/Footer";
 import './Products.css';
 import products from '../images_description.json';
 import ProductCard from "../components/ProductCard";
+import WhatsAppIcon from "../components/WhatsAppIcon";
 
-function Products(){
+
+function Products() {
     const [displayedProducts, setDisplayedProducts] = useState(products);
-    const [searchValue, setSearchValue] = useState("");
-    const handleFilter = (selectedFilter) => {
-        switch(selectedFilter){
-            case "Eye Care":
-                setDisplayedProducts(products.filter(product => /Eye Care|Topcon/.test(product.description)));
-                break;
-            case "Intensive Care Units":
-                setDisplayedProducts(products.filter(product => /ICU|Intensive Care Unit/.test(product.description) || product.name.includes("ICU")));
-                break;
-            case "Dental Instruments":
-                setDisplayedProducts(products.filter(product => product.description.includes("Dental") || product.name.includes("Dental")));
-                break;
-            case "Baby Equipments":
-                setDisplayedProducts(products.filter(product => /Incubator|Intensive Care Unit/.test(product.description) || product.name.includes("Incubator")));
-                break;
-            case "Kidney Health":
-                setDisplayedProducts(products.filter(product => product.description.includes ("Kidney,Renal")));
-                break;
-            default:
-                setDisplayedProducts(products);
-                break;
+    const [activeFilter, setActiveFilter] = useState("");
+
+    const handleFilter = (filter) => {
+        setActiveFilter(filter); // Set the current active filter
+        if (filter === "all") {
+            setDisplayedProducts(products);
+        } else {
+            const filters = {
+                "Eye Care": product => /Eye Care|Topcon/.test(product.description),
+                "Intensive Care Units": product => /ICU|Intensive Care Unit/.test(product.description) || product.name.includes("ICU"),
+                "Dental Instruments": product => product.description.includes("Dental") || product.name.includes("Dental"),
+                "Baby Equipments": product => /Incubator|Intensive Care Unit/.test(product.description) || product.name.includes("Incubator"),
+                "Kidney Health": product => /Nephrology|Haemodialysis/.test(product.description) || product.description.includes("Kidney,Renal,Nephrology")
+            };
+            setDisplayedProducts(products.filter(filters[filter]));
         }
-    }
+    };
+
     const handleSearch = (searchValue) => {
-        setSearchValue(searchValue);
         setDisplayedProducts(
             products.filter(
                 (product) =>
@@ -41,61 +37,57 @@ function Products(){
         );
     };
 
-    return(
+    return (
         <div className="Products">
-            <Navbar></Navbar>
+            <Navbar />
+            <WhatsAppIcon></WhatsAppIcon>
             <div className="products_container">
                 <div className="sidebar">
                     <div className="FilterBox">
                         <div className="FilterHead"><h5>Filters</h5></div>
-                        <div><input className="FilterElement" type="checkbox" onChange={(event) => handleFilter(event.target.checked ? "Eye Care" : "all")}></input ><span className="filtertext">Eye Care</span></div>
-                        <div><input className="FilterElement" type="checkbox" onChange={(event) => handleFilter(event.target.checked ? "Intensive Care Units" : "all")}></input><span className="filtertext">Intensive Care Units</span></div>
-                        <div><input className="FilterElement" type="checkbox" onChange={(event) => handleFilter(event.target.checked ? "Dental Instruments" : "all")}></input><span className="filtertext">Dental Instruments</span></div>
-                        <div><input className="FilterElement" type="checkbox" onChange={(event) => handleFilter(event.target.checked ? "Baby Equipments" : "all")}></input><span className="filtertext">Baby Equipments</span></div>
-                        <div><input className="FilterElement" type="checkbox" onChange={(event) => handleFilter(event.target.checked ? "Kidney Health" : "all")}></input><span className="filtertext">Kidney Health</span></div>
+                        {["Eye Care", "Intensive Care Units", "Dental Instruments", "Baby Equipments", "Kidney Health"].map(filter => (
+                            <div key={filter}>
+                                <input
+                                    className="FilterElement"
+                                    type="checkbox"
+                                    checked={activeFilter === filter}
+                                    maxLength={7}
+                                    onChange={(event) => handleFilter(event.target.checked ? filter : "all")}
+                                /><span className="filtertext">{filter}</span>
+                            </div>
+                        ))}
                         <div className="search-container">
                             <form className="product_form">
-                                <input className="product_input" type="text" placeholder="Search..." name="search" onChange={(event) => handleSearch(event.target.value)}></input>
+                                <input
+                                    className="product_input"
+                                    type="text"
+                                    placeholder="Search..."
+                                    name="search"
+                                    onChange={(event) => handleSearch(event.target.value)}
+                                />
                             </form>
                         </div>
                     </div>
-            <h4 className="sidebar__text-title">Partners we have represented</h4>
-            <img className="sidebar_image" src="https://ik.imagekit.io/emtbd/emt_images/images/Capture.JPG?ik-sdk-version=javascript-1.4.3&updatedAt=1673991441312"></img>
-
+                    <h4 className="sidebar__text-title">Partners we have represented</h4>
+                    <img className="sidebar_image" src="https://ik.imagekit.io/emtbd/emt_images/images/Capture.JPG?ik-sdk-version=javascript-1.4.3&updatedAt=1673991441312" alt="Partners"/>
+                </div>
+                <div className="products__main">
+                    <div className="products_main_all">
+                        {displayedProducts.map((product, index) => (
+                            <ProductCard
+                                key={index}
+                                productImage={product.productlink}
+                                productTitle={product.name}
+                                productDescription={product.description}
+                                productBrochure={product.Brochure}
+                            />
+                        ))}
+                    </div>
+                </div>
+            </div>
+            <Footer />
         </div>
-
-        <div className="products__main">
-            <div className="products_main_all">
-            {displayedProducts.map(product => (
-                <ProductCard 
-                    productImage={product.productlink}
-                    productTitle={product.name}
-                    productDescription={product.description}
-                    productBrochure={product.Brochure}
-                    
-                />
-            ))}
-        </div>
-
-        </div>
-
-    
-
-    </div>
-
-
-    <Footer></Footer>
-
-
-
-
-    </div>
-
-
-
-
-
-    )
+    );
 }
 
 export default Products;

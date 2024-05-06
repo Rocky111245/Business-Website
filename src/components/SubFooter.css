@@ -60,6 +60,7 @@ color: antiquewhite;
  padding: 0.9em;
  border-radius: 5px;
  transition: 0.5s ease;
+ cursor: pointer;
 }
 
 .subfooter__button:hover{

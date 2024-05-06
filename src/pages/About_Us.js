@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from "../components/Footer";
 import './About_Us.css';
 import SubFooter from "../components/SubFooter";
+import WhatsAppIcon from "../components/WhatsAppIcon";
 
 
 
@@ -11,6 +12,7 @@ import SubFooter from "../components/SubFooter";
 function About_Us() {
     return (<div className="about-us">
      <Navbar></Navbar>
+     <WhatsAppIcon></WhatsAppIcon>
 <div className="about-us__main-content-container">
         <div className="about-us__history-container">
           <div><h3 className="about-us__history-header">Our History</h3>
@@ -18,13 +20,15 @@ function About_Us() {
                       of the need to participate in the evolution of the 
                       medical equipment industry and offer latest 
                       medical technologies as they are invented, to the 
-                      people of Bangladesh. The founding member of 
+                      people of Bangladesh.</p> 
+        
+                      <p className="about-us__history-text">
                       Evolution Medical Technologies has served the 
                       medical equipment industry of Bangladesh since 
                       the 90’s and also the Managing Director of the 
                       oldest medical equipment and specialized 
                       medicine distributors in the country</p></div>
-                      <button  className="about-us__company-button" type="button">Download Our Company Profile</button>
+                      <a href="https://ik.imagekit.io/emtbd/emt_images/EMT%20Profile.pdf?updatedAt=1714984693242" target="_blank" rel="noopener noreferrer" className="subfooter__button-link"><button  className="about-us__company-button" type="button">Download Our Company Profile</button></a>
       </div>
     <div className="about-us__manufacturer-container">
         <div className="about-us__manufacturer-header">

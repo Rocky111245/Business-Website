@@ -1,23 +1,29 @@
+.HomePage_2ndSection__container {
+  width: 100%;
+  height: auto; /* Changed from 80vh to auto to accommodate content */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the images vertically */
+  justify-content: space-around; /* Ensures spacing between images */
 
-.HomePage_2ndSection__container{
-    width: 100%;
-    height: 80vh;
-    margin: 1em;
 }
 
-
-
 .HomePage_2ndSection-image {
-    width: 100%;
-    height: 80vh;
-    object-fit: contain;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
-    background-color: #ffffff;
-  }
-  
-  .HomePage_2ndSection-image.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  width: 80%; /* Adjust width as needed */
+  height: auto; /* Adjust for responsive height */
+  object-fit: contain;
+  margin: 1em 0; /* Add margin for spacing */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  background-color: #ffffff;
+}
+
+.HomePage_2ndSection-image.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.HomePage_2ndSection-image.delay {
+  transition-delay: 0.5s; /* Adds a delay to the appearance of the second image */
+}

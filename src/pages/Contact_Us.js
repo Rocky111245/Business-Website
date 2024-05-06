@@ -5,11 +5,13 @@ import { FaPhone, FaFax, FaBuilding, FaClock, FaEnvelope } from 'react-icons/fa'
 import FormspreeContactForm from "../components/FormspreeContactForm";
 import './Contact_Us.css';
 import '../utilities/fonts/style.css';
+import WhatsAppIcon from "../components/WhatsAppIcon";
 
 function Contact_Us() {
     return (
         <div className="Contact_Us">
             <Navbar />
+            <WhatsAppIcon></WhatsAppIcon>
             <div className="Contact_Us-container">
                 <div className="contact-us__form-container">
                     <FormspreeContactForm />
@@ -25,7 +27,8 @@ function Contact_Us() {
                     </div>
                     <div className="office_elements"><FaPhone className="ContactUs__icon" size={30} />
                         <h4>Telephone</h4>
-                        <p>+880 2 111 111 111</p>
+                        <p>+880 1727-072868 Engr. Khaled Saifullah (Opthalmology and others)</p>
+                        <p>+880 1713-013770 Dr Nazrul (Nephrology)</p>
                     </div>
                     <div className="office_elements"><FaEnvelope className="ContactUs__icon" size={30} />
                         <h4>Email</h4>
@@ -33,7 +36,7 @@ function Contact_Us() {
                     </div>
                     <div className="office_elements"><FaClock className="ContactUs__icon" size={30} />
                         <h4>Working Hours </h4>
-                        <p>9am-5pm Sun-Fri</p>
+                        <p>9am-5pm (Sun-Thurs)</p>
                     </div>
                 </div>
             </div>

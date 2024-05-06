@@ -41,7 +41,7 @@ const Services = () => {
                     <MdPublic className="services__icon" size={50} color="#9c27b0" />
                     <div className="services__content">
                         <h2>Global Quality Standards</h2>
-                        <p>Medical equipment procured only from globally renowned manufacturers</p>
+                        <p>Medical equipment procured only from globally renowned manufacturers.</p>
                     </div>
                 </section>
                 {/* New Sections */}

@@ -34,14 +34,15 @@
 
 }
 .about-us__history-text{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-     margin: 1rem;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+     margin: 2rem;
      line-height: 1.7rem;
      font-size: 1.1rem;
      letter-spacing: 0.03rem; 
      text-align: justify;
 }
 .about-us__company-button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 1em;
     padding: 0.5em;
     border-radius: 0.5em;
@@ -52,8 +53,10 @@
 }
 
 .about-us__company-button:hover{
+    background-color: #000000;
+    color:#DEB887 ;
     cursor: pointer;
-    padding: 1em;
+    padding: 0.8em;
 }
 
 
@@ -99,7 +102,7 @@
     letter-spacing: 0.03rem;
 }
 .about-us__manufacturer-card-description{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     margin: 1rem;
     line-height: 2rem;
     font-size: 1.2rem;
