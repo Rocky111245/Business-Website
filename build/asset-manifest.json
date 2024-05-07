@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.857a1831.css",
+    "main.js": "/static/js/main.c7a76492.js",
+    "static/media/GuardianSansBlackIt.woff": "/static/media/GuardianSansBlackIt.c05f5262c1c1b4f48e39.woff",
+    "static/media/GuardianSansBoldIt.woff": "/static/media/GuardianSansBoldIt.73139104d3d7ee35599c.woff",
+    "static/media/GuardianSansSemiboldIt.woff": "/static/media/GuardianSansSemiboldIt.cb8aad0630a1e9499cd4.woff",
+    "static/media/GuardianSansMediumIt.woff": "/static/media/GuardianSansMediumIt.673a82bd82769aa82756.woff",
+    "static/media/GuardianSansLightIt.woff": "/static/media/GuardianSansLightIt.f5d148cc9418ddb32f9a.woff",
+    "static/media/GuardianSansUltraIt.woff": "/static/media/GuardianSansUltraIt.62a7d04256539ac8aa4f.woff",
+    "static/media/GuardianSansThinIt.woff": "/static/media/GuardianSansThinIt.732e6f9dce89681ec2f3.woff",
+    "static/media/GuardianSansUltra.woff": "/static/media/GuardianSansUltra.7595b6281cbebf62d9e6.woff",
+    "static/media/GuardianSansBlack.woff": "/static/media/GuardianSansBlack.84386af97a0f3e62c1ef.woff",
+    "static/media/GuardianSansBold.woff": "/static/media/GuardianSansBold.bd966a717549529db99b.woff",
+    "static/media/GuardianSansSemibold.woff": "/static/media/GuardianSansSemibold.11d41b06a14e291650fc.woff",
+    "static/media/GuardianSansRegularIt.woff": "/static/media/GuardianSansRegularIt.63fbeb41b1ad5270396f.woff",
+    "static/media/GuardianSansHairlineIt.woff": "/static/media/GuardianSansHairlineIt.3bb1d2a9c240f484117e.woff",
+    "static/media/GuardianSansLight.woff": "/static/media/GuardianSansLight.dda089a307940407020d.woff",
+    "static/media/GuardianSansMedium.woff": "/static/media/GuardianSansMedium.4e0fc7fb814239393761.woff",
+    "static/media/GuardianSansThin.woff": "/static/media/GuardianSansThin.da944721470195c3374c.woff",
+    "static/media/GuardianSansHairline.woff": "/static/media/GuardianSansHairline.38c7deb68ada68f87cd7.woff",
+    "static/media/GuardianSansRegular.woff": "/static/media/GuardianSansRegular.0146119bd031fe3d9ab3.woff",
+    "index.html": "/index.html",
+    "main.857a1831.css.map": "/static/css/main.857a1831.css.map",
+    "main.c7a76492.js.map": "/static/js/main.c7a76492.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.857a1831.css",
+    "static/js/main.c7a76492.js"
+  ]
+}
