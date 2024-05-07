@@ -87,7 +87,6 @@ color: #015049;}
 
 @media only screen and (max-width: 1500px) and (min-width: 1380px) {
   
-
   .navbar__logo {
       width: 4.0rem; /* smaller logo for smaller screens */
   }
@@ -107,13 +106,13 @@ color: #015049;}
 
   .navbar__menu-link {
       font-size: 0.7rem; /* smaller font size for menu items */
-      padding: 0.7em; /* adjusted padding */
+      padding: 0.8em; /* adjusted padding */
   }
 
   .navbar__menu-link:hover {
     color: #053d7c;
     background-color: white;
-    padding: 0.7em;
+    padding: 0.8em;
 }
 
 }

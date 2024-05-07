@@ -93,15 +93,15 @@
   }
 
   .HomePage_1stSection__title {
-    font-size: 1.4rem; /* Ensure title is still prominent */
+    font-size: 1.5rem; /* Ensure title is still prominent */
   }
 
   .HomePage_1stSection__subtitle {
-    font-size: 1.1rem; /* Adjust subtitle size for readability */
+    font-size: 1.2rem; /* Adjust subtitle size for readability */
   }
 
   .HomePage_1stSection__description {
-    font-size: 1rem; /* Adjust description text size for smaller screens */
+    font-size: 1.1rem; /* Adjust description text size for smaller screens */
     line-height: 1.6; /* Adjust line height to maintain readability */
   }
 }
@@ -117,7 +117,7 @@
   }
 
   .HomePage_1stSection__title {
-    font-size: 1.5rem; /* Ensure title is still prominent */
+    font-size: 1.4rem; /* Ensure title is still prominent */
   }
 
   .HomePage_1stSection__subtitle {

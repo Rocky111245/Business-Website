@@ -17,9 +17,9 @@
   left:0;
   object-fit: cover;
   z-index: -1;
-  max-width: 50%;
+  width: 50%;
   opacity: 0.6;
-  min-height: 50vh;
+  height: 50vh;
 }
 .home-section_image2{
   position:absolute;
@@ -27,9 +27,9 @@
   left:50%;
   object-fit: cover;
   z-index: -1;
-  max-width: 50%;
+  width: 50%;
   opacity: 0.6;
-  min-height: 50vh;
+  height: 50vh;
 }
 
 .home-section__container-section1_background-text{
@@ -104,32 +104,25 @@
   .home-section__subtitle1,
   .home-section__subtitle2 {
       font-size: 1.2rem; /* Reduce subtitle font size */
-      margin: 1em 4em; /* Slightly reduce margin */
+      margin: 1em 3em; /* Slightly reduce margin */
   }
 
-  .home-section__description {
-      font-size: 1rem; /* Slightly reduce description font size */
-      margin: 1em 4em; /* Adjust margin to fit the text better */
-  }
+ 
 
-  .home-section_image,
-  .home-section_image2 {
-      max-width: 50%; /* Maintain half width */
-      min-height: 50vh; /* Maintain minimum height */
-  }
+ 
 }
 
 @media only screen and (max-width: 1379px) {
  
   .home-section__title1,
   .home-section__title2 {
-      font-size: 1.8rem; /* Further reduce title font size */
+      font-size: 1.9rem; /* Further reduce title font size */
       margin: 0.5em 0; /* Adjust title margin */
   }
 
   .home-section__subtitle1,
   .home-section__subtitle2 {
-      font-size: 1rem; /* Adjust subtitle font size for better readability */
+      font-size: 1.1rem; /* Adjust subtitle font size for better readability */
       margin: 1em 3em; /* Tighten margin to fit smaller screens */
   }
 

@@ -104,3 +104,14 @@ background: linear-gradient(to right, #daa520, #ffa600);
         font-size: 0.9rem;
     }
 }
+
+@media (max-width: 768px) {
+
+    .subfooter__sub-container {
+        flex-direction: column;
+    }
+    .subfooter__title{
+        margin: 0 0 1em 0;
+    }
+
+}

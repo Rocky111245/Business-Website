@@ -25,8 +25,8 @@
 }
 
 .Homesection2_blocks {
-    width: 17%; /* Adjust width to control block size */
-    padding: 2em;
+    width: 18%; /* Adjust width to control block size */
+    padding: 1.5em;
     text-align: center;
     background-color: white;
     border-radius: 10px; /* Rounded corners for cards */
@@ -47,8 +47,9 @@
 
 .icon-link{
     text-decoration: none;
-
+    font-size: 8em;
 }
+
 
 /* Responsive design */
 @media (max-width: 768px) {
@@ -57,18 +58,16 @@
     }
 
     .Homesection2_blocks {
-        width: 80%; /* Full width blocks on smaller screens */
+        width: 18%; /* Full width blocks on smaller screens */
         margin-bottom: 1em; /* Space between blocks */
     }
 
-    .Homesection2__text {
-        font-size: 1.5rem; /* Slightly smaller font size for mobile */
-    }
 }
 
 @media only screen and (max-width: 1500px) and (min-width: 1380px) {
     .Homesection2_blocks {
         padding: 1.5em; /* Adjust padding for space efficiency */
+        width: 18%;
     }
 
     .Homesection2__text {
@@ -78,11 +77,17 @@
     .Homesection2_card_title {
         font-size: 1.4rem; /* Slightly smaller to fit reduced card sizes */
     }
+
+    .icon-link{
+        text-decoration: none;
+        font-size: 7em;
+    }
 }
 
 @media only screen and (max-width: 1379px) {
     .Homesection2_blocks {
         padding: 1.0em; /* Adjust padding to maintain proportion */
+        width: 18%;
     }
 
     .Homesection2__text {
@@ -92,6 +97,10 @@
 
     .Homesection2_card_title {
         font-size: 1.1rem; /* Slightly reduce font size */
+    }
+    .icon-link{
+        text-decoration: none;
+        font-size: 6em;
     }
 }
 
