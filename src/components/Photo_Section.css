@@ -1,13 +1,12 @@
 .photo-section-container{
-    height: 100vh;
+    min-height: 100vh;
     background-color: #ffffff;
     text-align: center; /* Ensures the heading is centered */
-    margin-bottom: 2rem; /* Spacing before the photo section starts */
+  
 }
 .photo-section {
     position: relative;
-    width: 100%;
-    height: 90vh; /* Control the height of the photo section */
+    min-height: 90vh; /* Control the height of the photo section */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,13 +17,18 @@
   .photo-section__frame {
     position: absolute;
     width: 70vw; /* Width relative to the viewport */
-    height: 85vh;
+    height: 85vh; /* Controlled height */
+    overflow: hidden; /* Ensures nothing spills outside */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
     opacity: 0;
     transform: scale(0.8); /* Scale down the side images */
     bottom: 70px;
-    
   }
+  
   
   .photo-section__frame.active {
     opacity: 1;
@@ -34,7 +38,6 @@
   
   .photo-section__image {
     width: 100%;
-    height: 100%;
     object-fit: cover;
     border: 5px solid #fff; /* Add a prominent border */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* A deeper shadow for more depth */
@@ -42,10 +45,10 @@
   
   .photo-section__caption {
     position: absolute;
-    bottom: -1.5rem; /* Slightly below the image */
-    width: calc(100% ); /* Adjust width based on border */
-    text-align: center;
-    background-color: #000; /* Dark background for the caption */
+    bottom: 0; /* Aligns to the bottom of the frame */
+    left: 0; /* Aligns to the left of the frame */
+    width: 100%; /* Matches the width of the frame */
+    background-color: #000; /* Dark background for readability */
     color: #fff;
     padding: 1rem;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -55,6 +58,7 @@
     transition: all 0.5s ease-in-out;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow to lift the caption */
   }
+  
   
   
   .photo-section__heading {
@@ -72,6 +76,39 @@
     z-index: 3; /* Above the photo frames */
     position: relative; /* Necessary to lift the heading */
   }
+
+
+
+
+
+@media only screen and (max-width: 1500px) and (min-width: 1380px){
+.photo-section__heading{
+  font-size: 2rem;
+}
+.photo-section__caption {
+  font-size: 0.9rem; /* Adjust font size for readability on mobile */
+}
+
+
+
+} 
+@media only screen and (max-width: 1379px){
+  .photo-section__heading{
+    font-size: 1.7rem;
+  }
+  .photo-section__caption {
+    font-size: 0.8rem; /* Adjust font size for readability on mobile */
+  }
+
+}
+
+
+
+
+
+
+
+
   /* Responsive layout adjustments */
   @media (max-width: 768px) {
     .photo-section {

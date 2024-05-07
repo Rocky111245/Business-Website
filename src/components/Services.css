@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70vh;
+    min-height: 70vh;
     padding: 2em;
     font-family: 'Roboto', sans-serif;  /* Unified font for clean design */
 }
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 70vh;
+    min-height:inherit;
 }
 
 .services__heading {
@@ -55,7 +55,7 @@
 
 .services__icon {
     margin-bottom: 15px;
-    font-size: 50px;  /* Ensuring uniform icon size */
+    font-size: 4rem;  /* Ensuring uniform icon size */
     color: #4a90e2;  /* Unified color for icons for a sleek look */
 }
 
@@ -71,28 +71,75 @@
     line-height: 1.6rem;
 }
 
-@media only screen and (max-width: 1600px) {
 
+@media only screen and (max-width: 1500px) and (min-width: 1380px) {
     .services__container {
-        height: 110vh;
+        padding: 1em; /* Reduce padding */
+    }
 
-
-
-
+    .services__heading-container {
+        flex-basis: 35%; 
+        margin-left: 1em; /* Reduce margin */
+       
     }
 
     .services__heading {
-        font-size: 2.0rem;
-        color: #10375c;
-        margin: 0 20px;
+        font-size: 2rem; /* Adjust font size to fit smaller screens */
+        text-align: center; /* Center the heading text */
+        margin: 10px 0; /* Adjust margin */
     }
 
-    .services__feature{
-      font-size: 1.5rem;
-    
+
+    .services__feature {
+        max-width: 250px;
     }
 
-   
-    
+    .services__icon {
+        font-size: 2.5rem; /* Slightly reduce icon size for space efficiency */
+    }
+
+    .services__content h2 {
+        font-size: 1.2rem; /* Adjust heading size in content */
+    }
+
+    .services__content p {
+        font-size: 1rem; /* Adjust paragraph size for readability */
+    }
 }
-    
+
+
+@media only screen and (max-width: 1379px) {
+    .services__container {
+        padding: 1em; /* Reduce padding */
+    }
+
+    .services__heading-container {
+        flex-basis: 35%; 
+        margin-left: 1em; /* Reduce margin */
+       
+    }
+
+    .services__heading {
+        font-size: 2rem; /* Adjust font size to fit smaller screens */
+        text-align: center; /* Center the heading text */
+        margin: 10px 0; /* Adjust margin */
+    }
+
+
+    .services__feature {
+        max-width: 250px;
+    }
+
+    .services__icon {
+        font-size: 2.5rem; /* Slightly reduce icon size for space efficiency */
+    }
+
+    .services__content h2 {
+        font-size: 1.2rem; /* Adjust heading size in content */
+    }
+
+    .services__content p {
+        font-size: 1rem; /* Adjust paragraph size for readability */
+    }
+}
+

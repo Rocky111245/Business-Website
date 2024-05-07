@@ -1,3 +1,4 @@
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -12,7 +13,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px; /* Adjust the max width as needed */
+  max-width: 70%; /* Adjust the max width as needed */
   margin-bottom: 1rem; /* Space between content and copyright */
 }
 
@@ -73,3 +74,50 @@
     justify-content: center;
   }
 }
+
+
+
+@media only screen and (max-width: 1500px) and (min-width: 1380px) {
+  .footer__content {
+    max-width: 70%; /* Slightly reducing max-width for better proportionality */
+  }
+  .footer__title {
+    font-size: 1.1rem; /* Slightly smaller to maintain aesthetic balance */
+  }
+  .footer__motto{
+    font-size: 0.8rem;
+  }
+  .footer__logo {
+    width: 60px; 
+  }
+  .footer__social-icon {
+    font-size: 1.6rem; /* Slightly smaller icons */
+  }
+}
+
+
+@media only screen and (max-width: 1379px) {
+  .footer__content {
+    max-width: 80%; /* Increase max-width to utilize more space */
+  }
+
+  .footer__logo {
+    width: 60px; 
+  }
+
+
+  .footer__title {
+    font-size: 1.1rem;
+  }
+
+  .footer__motto{
+    font-size: 0.8rem;
+  }
+
+  .footer__social-icon {
+    font-size: 1.5rem;
+  }
+}
+
+
+

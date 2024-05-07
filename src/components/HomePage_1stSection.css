@@ -4,8 +4,7 @@
 
 .HomePage_1stSection__container {
   display: flex;
-  width: 100%;
-  height: 100vh; /* Adjusted for better responsiveness */
+  min-height: 100vh; /* Adjusted for better responsiveness */
   background-image: url("https://ik.imagekit.io/emtbd/emt_images/images/DALL_E%202024-05-05%2015.56.56%20-%20Create%20a%20professional%20and%20abstract%20animated%20background%20suitable%20for%20a%20medical%20company's%20website.%20The%20animation%20should%20feature%20soft%20light%20colors,%20conve.webp?updatedAt=1714895911063");
   background-size: cover;
   background-position: center;
@@ -13,6 +12,7 @@
 }
 
 .HomePage_1stSection__writings {
+  min-height: inherit;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -21,9 +21,13 @@
   margin: 5em;
 }
 
+.HomePage_1stSection__writings p {
+  margin-top: 0.7em;
+}
+
 /* Style for the first section */
 .HomePage_1stSection__writings-1st_section {
-  background-color: #d3e1e6; /* Light background for readability */
+  background-color: #d8ecf5; /* Light background for readability */
   width:55%;
   z-index:1 ;
   padding: 1em;
@@ -36,12 +40,10 @@
   background-color: #f1f1e5; /* Same as first for consistency */
   width: 45%;
   padding: 1em;
-  margin:10em 10em 0em 0em;
+  margin:8em 10em 0em 0em;
   z-index: 2;
   box-shadow: 10px 10px 5px 5px rgba(0, 0, 0, 0.3);
 }
-
-
 
 /* Common styles for text wrappers */
 /* Moderate Version */
@@ -71,8 +73,6 @@
   margin-bottom: 10px;
 }
 
-
-
 .HomePage_1stSection__description {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.2rem; /* Maintaining base font size */
@@ -80,6 +80,97 @@
   text-align: justify;
   line-height: 1.8; /* Increased from 1.6 for better readability */
 }
+
+
+
+
+
+
+@media only screen and (max-width: 1500px) and (min-width: 1380px) {
+  .HomePage_1stSection__writings{
+    margin: 3em 0em 0em 5em;
+    padding: 0.2em;
+  }
+
+  .HomePage_1stSection__title {
+    font-size: 1.4rem; /* Ensure title is still prominent */
+  }
+
+  .HomePage_1stSection__subtitle {
+    font-size: 1.1rem; /* Adjust subtitle size for readability */
+  }
+
+  .HomePage_1stSection__description {
+    font-size: 1rem; /* Adjust description text size for smaller screens */
+    line-height: 1.6; /* Adjust line height to maintain readability */
+  }
+}
+
+
+
+@media only screen and (max-width: 1379px) {
+  
+  .HomePage_1stSection__writings{
+    margin: 1em 0em 0em 5em;
+    padding: 0.2em;
+
+  }
+
+  .HomePage_1stSection__title {
+    font-size: 1.5rem; /* Ensure title is still prominent */
+  }
+
+  .HomePage_1stSection__subtitle {
+    font-size: 1.1rem; /* Adjust subtitle size for readability */
+  }
+
+  .HomePage_1stSection__description {
+    font-size: 1rem; /* Adjust description text size for smaller screens */
+    line-height: 1.6; /* Adjust line height to maintain readability */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media only screen and (max-width: 1500px) and (min-width: 1380px){
+
+} 
+@media only screen and (max-width: 1250px){
+
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media queries for responsiveness */
 @media (max-width: 960px) {
   .HomePage_1stSection__writings {

@@ -118,11 +118,11 @@ color: #015049;}
 
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1379px) {
 
 
     .navbar__logo {
-        width: 3.3rem; /* smaller logo for smaller screens */
+        width: 3.5rem; /* smaller logo for smaller screens */
     }
   
     .navbar__title {

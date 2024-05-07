@@ -3,6 +3,7 @@ import carouselImages from "../images_description.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronCircleLeft, faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 import "./Carousel.css";
+import "../utilities/fonts/fonts.css"
 
 
 function Carousel() {

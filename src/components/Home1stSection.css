@@ -9,8 +9,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 50vh;
+  min-height: 50vh;
 }
 .home-section_image{
   position:absolute;
@@ -18,9 +17,9 @@
   left:0;
   object-fit: cover;
   z-index: -1;
-  width: 50%;
+  max-width: 50%;
   opacity: 0.6;
-  height: 50vh;
+  min-height: 50vh;
 }
 .home-section_image2{
   position:absolute;
@@ -28,13 +27,13 @@
   left:50%;
   object-fit: cover;
   z-index: -1;
-  width: 50%;
+  max-width: 50%;
   opacity: 0.6;
-  height: 50vh;
+  min-height: 50vh;
 }
 
 .home-section__container-section1_background-text{
-  width: 50%;
+  max-width: 50%;
   text-align: center;
   min-width: 300px;
   padding: 0.5em;
@@ -47,8 +46,7 @@
   height: 50vh;
 }
 .home-section__container-section2_background-text{
-  width: 50%;
-  min-width: 300px;
+  max-width: 50%;
   padding: 0.5em;
   display: flex;
   flex-direction: column;
@@ -95,11 +93,50 @@
   margin: 1em 5em 5em 5em;
   
 }
-@media only screen and (max-width: 1400px) {
 
-.home-section_title1,.home-section__title2{
-  font-size: 2rem;
+
+@media only screen and (max-width: 1500px) and (min-width: 1380px) {
+  .home-section__title1,
+  .home-section__title2 {
+      font-size: 2.2rem; /* Slightly reduce font size */
+  }
+
+  .home-section__subtitle1,
+  .home-section__subtitle2 {
+      font-size: 1.2rem; /* Reduce subtitle font size */
+      margin: 1em 4em; /* Slightly reduce margin */
+  }
+
+  .home-section__description {
+      font-size: 1rem; /* Slightly reduce description font size */
+      margin: 1em 4em; /* Adjust margin to fit the text better */
+  }
+
+  .home-section_image,
+  .home-section_image2 {
+      max-width: 50%; /* Maintain half width */
+      min-height: 50vh; /* Maintain minimum height */
+  }
+}
+
+@media only screen and (max-width: 1379px) {
+ 
+  .home-section__title1,
+  .home-section__title2 {
+      font-size: 1.8rem; /* Further reduce title font size */
+      margin: 0.5em 0; /* Adjust title margin */
+  }
+
+  .home-section__subtitle1,
+  .home-section__subtitle2 {
+      font-size: 1rem; /* Adjust subtitle font size for better readability */
+      margin: 1em 3em; /* Tighten margin to fit smaller screens */
+  }
+
+  .home-section__description {
+      font-size: 0.9rem; /* Reduce description font size */
+     
+  }
 
 }
 
-}

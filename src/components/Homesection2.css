@@ -1,6 +1,6 @@
 .Homesection2_container{
-    width: 100%;
-    padding: 4em 0; /* Added top and bottom padding */
+    min-height: 40vh;
+    margin: 1em 0em 1em 0em;
     background-color: #ffffff ;
     box-sizing: border-box;
 }
@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1em; /* Use gap instead of margin in blocks for consistent spacing */
+    gap: 1em; 
 }
 
 .Homesection2__text {
@@ -25,7 +25,7 @@
 }
 
 .Homesection2_blocks {
-    width: 18%; /* Adjust width to control block size */
+    width: 17%; /* Adjust width to control block size */
     padding: 2em;
     text-align: center;
     background-color: white;
@@ -65,3 +65,33 @@
         font-size: 1.5rem; /* Slightly smaller font size for mobile */
     }
 }
+
+@media only screen and (max-width: 1500px) and (min-width: 1380px) {
+    .Homesection2_blocks {
+        padding: 1.5em; /* Adjust padding for space efficiency */
+    }
+
+    .Homesection2__text {
+        font-size: 1.8rem; /* Adjust font size to fit intermediate screens */
+    }
+
+    .Homesection2_card_title {
+        font-size: 1.4rem; /* Slightly smaller to fit reduced card sizes */
+    }
+}
+
+@media only screen and (max-width: 1379px) {
+    .Homesection2_blocks {
+        padding: 1.0em; /* Adjust padding to maintain proportion */
+    }
+
+    .Homesection2__text {
+        font-size: 1.6rem; /* Reduce font size for better fit on screen */
+   
+    }
+
+    .Homesection2_card_title {
+        font-size: 1.1rem; /* Slightly reduce font size */
+    }
+}
+
