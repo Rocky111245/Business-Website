@@ -20,7 +20,7 @@
 }
 
 .contact-us__form-container {
-    width: 45%;
+    width: 35%;
     background: #ffffff;
     padding: 2rem;
     border-radius: 10px;
@@ -29,6 +29,7 @@
 }
 
 .contact-us__form__succeeded {
+    max-width:100%;
     padding: 1.5rem;
     margin-top: 1rem;
     background-color: #e8f0fe; /* Subtle blue background */
@@ -42,6 +43,7 @@
 
 .contact-us__reach-out {
     width: 35%;
+    min-width: 30%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -79,7 +81,7 @@
 
 .contact-us__submit-button {
     width: 100%;
-    padding: 1rem;
+    padding: 1em;
     background-color: #0056b8; /* Button color */
     color: white;
     border: none;
@@ -92,25 +94,13 @@
     background-color: #003a70; /* Darker blue on hover */
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .Contact_Us-container {
-        flex-direction: column;
-    }
-    .contact-us__form-container, .contact-us__reach-out {
-        width: 90%;
-    }
-}
+
 
 /* Icons and reach out section adjustments */
 .ContactUs__icon {
-    margin-bottom: 10px; /* Space between icon and text */
+    margin-bottom:0.5em; /* Space between icon and text */
     color: #007BFF; /* Icon color */
-}
-
-.office_elements {
-    font-size: 1.1rem;
-    margin-bottom: 1rem; /* Space between sections */
+    font-size: 2.2em;
 }
 
 .office_elements h4 {
@@ -131,7 +121,59 @@
 
 .contact-us__google-map {
     width: 100%;
-    height: 80vh;
+    min-height: 70vh;
     border-radius: 8px;
     margin-top: 1rem;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .Contact_Us-container {
+        flex-direction: column;
+    }
+    .contact-us__form-container, .contact-us__reach-out {
+        width: 90%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1500px) and (min-width: 1380px) {
+    .office_elements h4, .office_elements p, .contact-us__form-group label {
+        font-size: 1.1rem; /* Slightly reduce font size for better readability */
+    }
+
+    .ContactUs__icon {
+        margin-bottom: 0.3em; /* Adjust icon spacing */
+        font-size: 1.7em;
+    }
+   
+}
+
+@media only screen and (max-width: 1379px) {
+
+.contact-us__form-container{
+    min-width: 45%;
+}
+.contact-us__reach-out{
+    min-width: 40%;
+
+}
+
+.office_elements h4, .office_elements p, .contact-us__form-group label {
+    font-size: 1.0rem; /* Slightly reduce font size for better readability */
+}
+
+.ContactUs__icon {
+    margin-bottom: 0.3em; /* Adjust icon spacing */
+    font-size: 1.5em;
+}
+
+.contact-us__google-map {
+    min-height: 50vh; /* Adjust map height to be less dominating on the layout */
+}
+.contact-us__form__succeeded{
+    font-size: 1.0rem;
+}
+}
+

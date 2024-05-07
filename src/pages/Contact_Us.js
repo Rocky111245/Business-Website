@@ -18,25 +18,25 @@ function Contact_Us() {
                 </div>
                 <div className="contact-us__reach-out">
                     <div className="contact-us__reach-out-section">
-                        <FaBuilding className="ContactUs__icon" size={30} />
+                        <FaBuilding className="ContactUs__icon" />
                         <div className="office_elements">
                             <h4>Office:</h4>
                             <p>41/1 (Zenat Tower), 2nd Floor, Kazi Nazrul Islam Avenue, Dhaka – 1215, Bangladesh</p>
                             <p>9:00-17:00 for physical visit (Online responses are much faster)</p>
                         </div>
                     </div>
-                    <div className="office_elements"><FaPhone className="ContactUs__icon" size={30} />
+                    <div className="office_elements"><FaPhone className="ContactUs__icon"/>
                         <h4>Telephone</h4>
-                        <p>+880 1727-072868 Engr. Khaled Saifullah (Opthalmology and others)</p>
-                        <p>+880 1713-013770 Dr Nazrul (Nephrology)</p>
+                        <p><b>Engr. Khaled Saifullah (Opthalmology and others) </b> +880 1727-072868 </p>
+                        <p><b>Dr Nazrul (Nephrology)</b> +880 1713-013770 </p>
                     </div>
-                    <div className="office_elements"><FaEnvelope className="ContactUs__icon" size={30} />
+                    <div className="office_elements"><FaEnvelope className="ContactUs__icon"/>
                         <h4>Email</h4>
-                        <p>hasan@emtbd.com</p>
+                        <p><b>hasan@emtbd.com</b></p>
                     </div>
-                    <div className="office_elements"><FaClock className="ContactUs__icon" size={30} />
+                    <div className="office_elements"><FaClock className="ContactUs__icon" />
                         <h4>Working Hours </h4>
-                        <p>9am-5pm (Sun-Thurs)</p>
+                        <p><b>9am-5pm </b>(Sat-Thurs)</p>
                     </div>
                 </div>
             </div>

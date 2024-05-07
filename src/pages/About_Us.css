@@ -3,11 +3,10 @@
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
-
 }
 .about-us__main-content-container{
     display: flex;
-    width: 100%;
+    max-width: 100%;
     justify-content: space-evenly;
     align-items: center;
     background-image: url("https://ik.imagekit.io/emtbd/emt_images/images/dna-163710.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673883336648");
@@ -17,7 +16,7 @@
     background-color: #F5FFFA;
     line-height:3rem;
     max-width:600px;
-    min-width: 300px;
+    min-width: 400px;
     text-align: center;
     box-shadow: 0px 10px 20px 5px;
     margin: 5em; 
@@ -31,7 +30,6 @@
     margin-right: 0.5rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5rem;
-
 }
 .about-us__history-text{
     font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
@@ -48,8 +46,6 @@
     border-radius: 0.5em;
     background-color: #DEB887;
     transition: all 0.5s ease ;
-    
-
 }
 
 .about-us__company-button:hover{
@@ -58,14 +54,11 @@
     cursor: pointer;
     padding: 0.8em;
 }
-
-
-
-
 .about-us__manufacturer-container{
     background-color: #F5FFFA;
     max-width: 500px;
-     border-radius: 0.4em;
+    min-width: 400px;
+    border-radius: 0.4em;
     text-align: center;
     box-shadow: 0px 10px 30px 5px;
     margin: 5em; 
@@ -85,8 +78,6 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight:bold ; 
 }
-
-
 .about-us__manufacturer-card-title{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 1rem;
@@ -107,4 +98,65 @@
     line-height: 2rem;
     font-size: 1.2rem;
     letter-spacing: 0.03rem;
+}
+
+
+@media only screen and (max-width: 1500px) and (min-width: 1380px) {
+    
+    .about-us__history-header,
+    .about-us__manufacturer-header-title {
+        font-size: 1.4rem; /* Adjust header font size for better visual hierarchy */
+    }
+
+    .about-us__history-text,
+    .about-us__manufacturer-card-description {
+        font-size: 1rem; /* Scale down the text size for better legibility */
+        line-height: 1.5rem; /* Improve line spacing */
+    }
+
+    .about-us__manufacturer-card-title,
+    .about-us__manufacturer-card-subtitle {
+        font-size: 1.2rem; /* Subtle reduction in font size */
+    }
+
+    
+}
+
+
+
+@media only screen and (max-width: 1379px) {
+    .about-us__history-header,
+    .about-us__manufacturer-header-title {
+        font-size: 1.2rem; /* Adjust header font size for better visual hierarchy */
+    }
+
+    .about-us__history-text,
+    .about-us__manufacturer-card-description {
+        font-size: 1rem; /* Scale down the text size for better legibility */
+        line-height: 1.4rem; /* Improve line spacing */
+    }
+
+    .about-us__manufacturer-card-title,
+    .about-us__manufacturer-card-subtitle {
+        font-size: 1.1rem; /* Subtle reduction in font size */
+    }
+
+    
+    .about-us__company-button{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: 1em;
+        padding: 0.4em;
+        border-radius: 0.5em;
+        background-color: #DEB887;
+        transition: all 0.5s ease ;
+        
+    
+    }
+    
+    .about-us__company-button:hover{
+        background-color: #000000;
+        color:#DEB887 ;
+        cursor: pointer;
+        padding: 0.7em;
+    }
 }

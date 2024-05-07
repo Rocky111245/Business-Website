@@ -4,7 +4,7 @@ import { useForm, ValidationError } from '@formspree/react';
 function FormspreeContactForm() {
   const [state, handleSubmit] = useForm("mdoqbpaq"); // Use your Formspree form ID here
   if (state.succeeded) {
-      return <p className='contact-us__form__succeeded'>Thank you for your inquiry! You email will be responded to within 1 business day.</p>;
+      return <p className='contact-us__form__succeeded'>Thank you for reaching out to us! We will respond to your inquiry within one business day.</p>;
   }
   return (
     <form onSubmit={handleSubmit} className="contact-us__form">
