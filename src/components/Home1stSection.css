@@ -112,22 +112,25 @@
  
 }
 
-@media only screen and (max-width: 1379px) {
- 
+@media only screen and (max-width: 1050px) {
+
   .home-section__title1,
   .home-section__title2 {
       font-size: 1.9rem; /* Further reduce title font size */
       margin: 0.5em 0; /* Adjust title margin */
+      
   }
 
   .home-section__subtitle1,
   .home-section__subtitle2 {
       font-size: 1.1rem; /* Adjust subtitle font size for better readability */
       margin: 1em 3em; /* Tighten margin to fit smaller screens */
+    
   }
 
   .home-section__description {
       font-size: 0.9rem; /* Reduce description font size */
+     
      
   }
 

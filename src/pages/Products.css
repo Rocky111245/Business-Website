@@ -3,7 +3,7 @@
 }
 
 .sidebar{
-width: 15%;
+width: 15vw;
 display: flex;
 margin-left: 1em;
 flex-direction: column;
@@ -135,78 +135,62 @@ transform: rotate(40deg);
 
 /* Add a global styles */
 .filtertext {
-font-size: 16px;
+font-size: 1.1em;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 color: #333;
 margin-left: 10px;
 }
 
-
-    
- 
-.filtertext{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.1em;
-    
-}
 .FilterElement:hover{
        cursor: pointer;
-   }  
+}  
 
    
+.products_main_all {
+    display: grid;
+    margin-left: 1em;
 
-
-
-
-
-
-.products__main{
-    width: 85%;
-    margin-left: 7em;
-    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em; /* Space between cards */
+  
 }
-.products_main_all{
+
+.product-card {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5em;
+    padding: 0.5em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s ease;
 }
 
-.product-card{
-display: flex;
-flex-direction: column;
-text-align: left;
-margin: 1em;
-transition: all 0.7s ease;
-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-
-
+.product-card:hover {
+    transform: scale(1.05); /* Slight scale on hover for effect */
 }
 
-.product-card:hover{
-    padding:1em;
-    box-shadow: 0px 5px 15px 5px;
-    
-
+.images {
+width: 100%; /* Full width of the card */
+height: auto; /* Maintain aspect ratio */
+object-fit: cover; /* Cover the frame fully while maintaining aspect ratio */
 }
 
-
-.images{
-    width: 400px;
-    height: 300px;
-    object-fit: contain;
-    border-radius: 1em;
-    margin: 1em 1em 0em 1em;
-
-}
 .images_title{
-    margin-left: 1em;
+font-family:'Guardian Sans Bold', serif ;
+color: #10375c;
+margin: 1em 0em 1em 0em;
+} 
+
+.images_description {
+font-family:'Guardian Sans Light', serif ;
+color: #312e2e;
 }
-.images_description{
-    margin-left: 1em;
-}
+
+
 
 .download{
-margin: 1.5em 0em 1em 1em;
-max-width: 100%;
+margin: 1em 0em 1em 0em;
 background-color: black;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 color: wheat;
@@ -243,64 +227,11 @@ cursor: pointer;
 
  @media only screen and (max-width: 1500px) and (min-width: 1380px) {
 
-    .products__main {
-        width: 80%; /* Allocate 80% of space to main content */
-        margin-left:5em; /* Ensure padding around the content */
-    }
-
-    .product-card {
-         /* Two cards per row with some breathing room */
-        margin: 1em;
-        padding: 1em;
-    }
-
-    .images {
-        min-height: auto; /* Adjust height to maintain aspect ratio */
-        max-width: 100%; /* Limit image width to contain within card */
-    }
-    .images_description{
-
-    }
-    .images_title{
-        
-    }
-
    
 }
 
 @media only screen and (max-width: 1379px) {
-    .sidebar {
-        width: 100%; /* Sidebar takes full width at the top or bottom */
-        order: -1; /* Move sidebar to the top for better visibility */
-        margin-bottom: 1em; /* Space between sidebar and products */
-    }
-
-    .products__main {
-        width: 100%; /* Full width for main product display */
-        margin: 0; /* Adjust margins to fit tightly */
-        padding: 0.5em; /* Slightly reduce padding for more space */
-    }
-
-    .product-card {
-        flex-basis: 50%; /* Ensure two cards per row */
-        margin: 0.25em; /* Reduce margins to fit more content */
-        padding: 0.25em; /* Reduce padding inside each card */
-    }
-
-    .images {
-        width: 100%; /* Full width images */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    .home-section__title1,
-    .home-section__title2 {
-        font-size: 2rem; /* Slightly reduce title font size */
-    }
-
-    .home-section__subtitle1,
-    .home-section__subtitle2 {
-        font-size: 1rem; /* Smaller subtitle font size for better readability */
-    }
+    
 }
 
 

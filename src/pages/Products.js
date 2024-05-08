@@ -71,7 +71,7 @@ function Products() {
                     <h4 className="sidebar__text-title">Partners we have represented</h4>
                     <img className="sidebar_image" src="https://ik.imagekit.io/emtbd/emt_images/images/Capture.JPG?ik-sdk-version=javascript-1.4.3&updatedAt=1673991441312" alt="Partners"/>
                 </div>
-                <div className="products__main">
+              
                     <div className="products_main_all">
                         {displayedProducts.map((product, index) => (
                             <ProductCard
@@ -83,7 +83,7 @@ function Products() {
                             />
                         ))}
                     </div>
-                </div>
+               
             </div>
             <Footer />
         </div>

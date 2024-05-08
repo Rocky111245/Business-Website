@@ -160,3 +160,47 @@
         padding: 0.7em;
     }
 }
+
+@media only screen and (max-width: 1050px)  {
+    .about-us__main-content-container {
+        flex-direction: column; /* Stack elements vertically for better readability on tablets */
+        align-items: center; /* Center-align the content for a balanced look */
+        padding: 1em; /* Adjust padding for better spacing */
+    }
+
+    .about-us__history-container,
+    .about-us__manufacturer-container {
+        max-width: 70%; /* Allow these containers to take more width for better layout */
+        min-width: auto; /* Remove any minimum width constraints */
+        margin: 3em 0; /* Increase vertical spacing between sections */
+        padding: 1.5em; /* Enhance padding for readability */
+    }
+
+    .about-us__history-header,
+    .about-us__manufacturer-header-title {
+        font-size: 1.2rem; /* Increase font size slightly for header visibility */
+    }
+
+    .about-us__history-text,
+    .about-us__manufacturer-card-description,
+    .about-us__manufacturer-card-title,
+    .about-us__manufacturer-card-subtitle {
+        font-size: 1.0rem; /* Adjust text size for better readability on tablets */
+        line-height: 1.8rem; /* Increase line spacing for better text flow */
+    }
+
+    .about-us__company-button {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 0.6em 1em; /* Adjust padding for easier interaction */
+    }
+
+    .about-us__company-button:hover {
+        padding: 0.6em 1em; /* Maintain padding consistency on hover */
+    }
+
+    .about-us__manufacturer-card-image {
+        width: 50%; /* Adjust image width to fit container width */
+       
+    }
+}
+

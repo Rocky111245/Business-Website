@@ -154,11 +154,39 @@ color: #015049;}
 
 }
 
-/* 
-@media only screen and (max-width: 1500px) and (min-width: 1380px){
+@media only screen and (max-width: 1050px) and (min-width: 690px) {
 
-} 
-@media only screen and (max-width: 1250px){
+    .navbar__logo {
+        width: 3.5rem; /* smaller logo for smaller screens */
+    }
+  
+    .navbar__title {
+        font-size: 1.2rem; /* smaller font size for smaller screens */
+        margin: 0.2em; /* reduced margin */
+        margin-right: 1em;
+    }
+  
+    .navbar__motto {
+        font-size: 0.6rem; /* smaller motto font size */
+    }
+  
+    .navbar__menu-item {
+        margin: 0.5em; /* increase vertical spacing */
+    }
+  
+    .navbar__menu-link {
+        font-size: 0.7rem; /* smaller font size for menu items */
+        padding: 1em; /* adjusted padding */
+    }
+  
+    .navbar__menu-link:hover {
+      color: #053d7c;
+      background-color: white;
+      padding:1em;
+  }
+  
 
 
-} */
+
+
+}

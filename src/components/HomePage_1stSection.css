@@ -130,55 +130,64 @@
   }
 }
 
+@media only screen and (max-width: 1050px) {
+  .HomePage_1stSection__container {
+      min-height: auto;
+      flex-direction: column; /* Stack sections vertically for better readability */
+      align-items: center; /* Center-align content for a visually appealing layout */
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-@media only screen and (max-width: 1500px) and (min-width: 1380px){
-
-} 
-@media only screen and (max-width: 1250px){
-
-
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Media queries for responsiveness */
-@media (max-width: 960px) {
   .HomePage_1stSection__writings {
-    flex-direction: column;
+      flex-direction: column; /* Stack the writing sections vertically */
+      margin: 0.5em 0em 1em 0em; /* Provide ample space around the content for a clean look */
+      padding: 1em; /* Ensure sufficient padding for touch interactions */
   }
 
   .HomePage_1stSection__writings-1st_section,
   .HomePage_1stSection__writings-2nd_section {
-    width: 100%; /* Full width for smaller screens */
+      width:80%; /* Adjust width to take up most of the screen but leave some margin */
+      margin: 1em auto; /* Center and add margin for separation */
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); /* Slightly lighter shadow for a softer effect */
+  }
+
+  .HomePage_1stSection__title {
+      font-size: 1.3rem; /* Slightly smaller font size for titles */
+  }
+
+  .HomePage_1stSection__subtitle {
+      font-size: 1.0rem; /* Reduce subtitle font size for proportionality */
+  }
+
+  .HomePage_1stSection__description {
+      font-size: 1rem; /* Reduce text size for better readability */
+      line-height: 1.5; /* Adjust line height for better readability */
+      text-align: left; /* Align text to the left for a more natural reading flow */
+   
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

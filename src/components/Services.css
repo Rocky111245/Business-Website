@@ -143,3 +143,39 @@
     }
 }
 
+@media (max-width: 1050px){
+
+    .services__container {
+        flex-direction: column;
+        min-height: auto;
+        padding: 1em; /* Reduce padding */
+    }
+
+    .services__heading-container {
+        flex-basis: 45%; 
+        margin: 0em 0em 3em 1em;
+    }
+
+    .services__heading {
+        font-size: 2rem; /* Adjust font size to fit smaller screens */
+        text-align: center; /* Center the heading text */
+        margin: 10px 0; /* Adjust margin */
+    }
+    .services__feature {
+        max-width: 250px;
+    }
+
+    .services__icon {
+        font-size: 2.0rem; /* Slightly reduce icon size for space efficiency */
+    }
+
+    .services__content h2 {
+        font-size: 1.1rem; /* Adjust heading size in content */
+    }
+
+    .services__content p {
+        font-size: 1rem; /* Adjust paragraph size for readability */
+    }
+
+}
+

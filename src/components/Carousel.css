@@ -3,18 +3,15 @@
   position: relative;
   background-color: white !important;
   max-width: 100%;
-  min-height: 70vh;
+  min-height: 60vh;
   
 }
-
 .slider-wrapper {
   display: flex;
-  width: 100%;
-  height: 100%;
 }
 
 .slide {
-  min-width: 100%; /* Each slide takes up the full width of the carousel */
+  min-width: 100%;
   transition: transform 0.5s ease-in-out;
   display: flex;
   justify-content: center;
@@ -26,12 +23,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  border-radius: 20px;
-  max-width: 80%;
   min-height: 70vh;
-  max-width: 700px;
+  max-width: 500px;
   text-align: center;
+}
+
+.carousel__title {
+  font-family: 'Guardian Sans Bold', serif;
+  font-size: 1.6rem; /* Slightly larger font size for title */
+  color: #10375c;
+  padding: 0.5em;
+}
+
+ 
+.carousel__description {
+  font-family: 'Guardian Sans Light', serif;
+  font-size: 1.2rem;
+  color: #666; /* Lighter text color for descriptions */
 }
 
 .carousel__image {
@@ -59,18 +67,21 @@
   right: 10px;
 }
 
+/* Buttons and Text Styling with Custom Fonts */
 .carousel__learn-more-button {
+  font-family: 'Guardian Sans Medium', sans-serif;
   margin-top: 2em;
-  font-size: 1.2rem;
-  background-color: #163caf;
+  padding: 10px 50px;
+  background-color: #4169E1;
   color: white;
   border: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .carousel__learn-more-button:hover {
-  background-color: #059980;
+  background-color: #4ca06f;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+

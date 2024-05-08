@@ -1,33 +1,12 @@
-.container {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: space-between; /* this will make sure that the Navbar and Footer components are at the top and bottom of the page respectively */
-    
+
+:root {
+  /* Base font size for all screens */
+  font-size: 1rem; /* Adjust this base size as needed */
 }
 
-
-.product_image{
-    width: 400px;
-    height: 300px;
-    object-fit: contain;
-    border-radius: 1em;
-    margin: 1em 1em 0em 1em;
-
+@media (min-width: 1921px) {
+  :root {
+    /* Scale font size linearly for screens wider than 1920px */
+    font-size: calc(1.1rem + (100vw - 1920px) / 100);
+  }
 }
-.product_title{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    font-size: 1.2rem;  
-    margin-bottom: 0.3em; 
-}
-.product_description{
- font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- font-weight: bold;
- font-size: 1.1rem;
-}
-
-.carousel-status{
-    font-size: 1.5rem;
-}
-

@@ -51,18 +51,7 @@
 }
 
 
-/* Responsive design */
-@media (max-width: 768px) {
-    .Homesection2 {
-        flex-direction: column;
-    }
 
-    .Homesection2_blocks {
-        width: 18%; /* Full width blocks on smaller screens */
-        margin-bottom: 1em; /* Space between blocks */
-    }
-
-}
 
 @media only screen and (max-width: 1500px) and (min-width: 1380px) {
     .Homesection2_blocks {
@@ -102,5 +91,27 @@
         text-decoration: none;
         font-size: 6em;
     }
+}
+
+/* Responsive design */
+@media (max-width: 1050px) {
+    .Homesection2_blocks {
+        width: 30%; /* Full width blocks on smaller screens */
+        margin-bottom: 1em; /* Space between blocks */
+    }
+
+    .Homesection2__text {
+        font-size: 1.3rem; /* Adjust font size to fit intermediate screens */
+    }
+
+    .Homesection2_card_title {
+        font-size: 1.1rem; /* Slightly smaller to fit reduced card sizes */
+    }
+
+    .icon-link{
+        text-decoration: none;
+        font-size: 5em;
+    }
+
 }
 

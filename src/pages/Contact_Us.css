@@ -25,7 +25,7 @@
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
-    margin: 1rem;
+    margin: 1em;
 }
 
 .contact-us__form__succeeded {
@@ -177,3 +177,55 @@
 }
 }
 
+@media only screen and (max-width: 1050px)  {
+    .Contact_Us-container {
+        flex-direction: column; /* Switch to column layout */
+        align-items: center; /* Center align items for consistency */
+        padding: 0.7em; /* Adjust padding for a tighter layout */
+    }
+
+    .contact-us__form-container, .contact-us__reach-out {
+        width: 100%; /* Full width to utilize the available space */
+        min-width: auto; /* Override any previous min-width settings */
+        max-width: 600px; /* Limit maximum width for better readability */
+        margin: 0.5em 0; /* Adjust margin for vertical stacking */
+        padding: 1.5rem; /* Provide ample padding for touch interactions */
+    }
+
+    .ContactUs__icon {
+        font-size: 1.5em; /* Adjust icon size for better visibility */
+        margin-bottom: 10px; /* Provide space between icon and text */
+    }
+
+    .office_elements h4, .office_elements p, .contact-us__form-group label {
+        font-size: 1rem; /* Slightly reduce font size for space efficiency */
+    }
+
+    .contact-us__google-map {
+        width: 100%; /* Full width map */
+        min-height: 500px; /* Adjust height for compact display */
+    }
+
+    .contact-us__form__succeeded {
+        font-size: 1rem; /* Adjust font size for success message */
+        max-width: 90%; /* Adjust width for better fit within the container */
+        padding: 1em; /* Adjust padding for a balanced appearance */
+    }
+
+    .contact-us__submit-button, .contact-us__input, .contact-us__select, .contact-us__textarea {
+        padding: 0.8em; /* Adjust padding for easier interaction */
+    }
+
+    .contact-us__input, .contact-us__select, .contact-us__textarea {
+        margin-top: 0.5em;
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid #007BFF; /* Accent border */
+        background: #eef1f7; /* Subtle background */
+    }
+    
+    .contact-us__textarea {
+        height: 100px; /* Fixed height for textarea */
+    }
+}
