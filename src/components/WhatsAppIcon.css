@@ -18,3 +18,32 @@
 .whatsapp-icon:hover {
     background-color: #128C7E; /* Darker shade on hover */
 }
+
+
+@media only screen and (max-width: 1500px) and (min-width: 1380px) {
+    .whatsapp-icon {
+    width: 45px;
+    height: 45px;
+
+    }
+   
+}
+
+@media only screen and (max-width: 1379px) {
+    .whatsapp-icon {
+    width: 40px;
+    height: 40px;
+    }
+}
+
+@media only screen and  (min-width: 2100px) {
+    .whatsapp-icon {
+    width: 75px;
+    height:75px;
+
+    }
+   
+}
+
+
+

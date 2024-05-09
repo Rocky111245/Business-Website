@@ -74,9 +74,10 @@
 }
 
 .HomePage_1stSection__description {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
   font-size: 1.2rem; /* Maintaining base font size */
-  color: #333333; /* Standard dark grey */
+  color: #000000; /* Standard dark grey */
   text-align: justify;
   line-height: 1.8; /* Increased from 1.6 for better readability */
 }

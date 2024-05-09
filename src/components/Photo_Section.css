@@ -40,22 +40,31 @@
 
 .photo-section__caption {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-  color: white;
-  padding: 10px; /* Padding for text */
-  font-size: 1.1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-  transition: opacity 0.5s;
+  background-color: #000; /* Dark background for readability */
+    color: #fff;
+    padding: 1rem;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300; /* Lighter font-weight for a modern touch */
+    letter-spacing: 1px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow to lift the caption */
 }
 
 .photo-section__heading {
   font-size: 2.5rem;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
   color: #003366;
-  margin-bottom: 20px; /* Space below heading */
-  padding: 10px 20px;
+  margin-bottom: 1rem; /* Space below heading */
+  padding: 0.5rem 2rem;
   background-color: #fff;
   display: inline-block;
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 25px; /* Rounded edges for a modern look */
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transform: translateY(-50%); /* Lift the heading up to merge with the photo section */
+  z-index: 3; /* Above the photo frames */
+  position: relative; /* Necessary to lift the heading */
 }
 
 /* Responsive Adjustments */

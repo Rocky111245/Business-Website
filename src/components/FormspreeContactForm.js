@@ -14,7 +14,7 @@ function FormspreeContactForm() {
       </div>
 
       <div className="contact-us__form-group">
-        <label className="contact-us__label" htmlFor="email">Email</label>
+        <label className="contact-us__label" htmlFor="email">Your Email</label>
         <input id="email" type="email" name="email" className="contact-us__input contact-us__input--email" required />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
       </div>

@@ -1,15 +1,23 @@
 .products_container{
-    display: flex;
+  display: flex;
+  flex-direction: row; /* Ensures sidebar and main content are in a row */
+  align-items: flex-start; /* Aligns items to the top of the container */
+  padding: 20px; /* Adds padding around the entire products container */
+  gap: 20px; /* Provides a gap between sidebar and main content */
 }
 
 .sidebar{
-width: 15vw;
-display: flex;
-margin-left: 1em;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-text-align: center;
+  flex: 0 0 200px; /* Fixes sidebar width and prevents growing or shrinking */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f4; /* Gives the sidebar a distinct background */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: auto;
 }
 
 .sidebar__text-title{
@@ -148,22 +156,26 @@ margin-left: 10px;
 
    
 .products_main_all {
-    display: grid;
-    margin-left: 1em;
-
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2em; /* Space between cards */
-  
+  flex: 1; /* Takes remaining space */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Aligns products to the start */
+  gap: 20px; /* Provides spacing between cards */
 }
 
 .product-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0.5em;
-    padding: 0.5em;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    transition: all 0.3s ease;
+  /* Fixed width for each card */
+min-height: 400px; /* Minimum height to maintain uniformity */
+max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center; /* Distributes space between content */
+  align-items: flex-start;
+  margin: 0.5em;
+  padding: 0 1em 0 1em;
+  
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.3s ease;
 }
 
 .product-card:hover {
@@ -171,20 +183,24 @@ margin-left: 10px;
 }
 
 .images {
-width: 100%; /* Full width of the card */
-height: auto; /* Maintain aspect ratio */
-object-fit: cover; /* Cover the frame fully while maintaining aspect ratio */
+  max-width: 320px;
+  height: 230px; /* Fixed height for images */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+  border-radius: 4px; /* Optional: rounds corners of images */
 }
 
 .images_title{
 font-family:'Guardian Sans Bold', serif ;
 color: #10375c;
 margin: 1em 0em 1em 0em;
+font-size: 1.17rem;
 } 
 
 .images_description {
 font-family:'Guardian Sans Light', serif ;
 color: #312e2e;
+font-size: 1rem;
+line-height: 1.2rem;
 }
 
 
@@ -194,11 +210,10 @@ margin: 1em 0em 1em 0em;
 background-color: black;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 color: wheat;
-padding: 0.4em;
+padding: 0.3em;
 border-radius: 5px;
 transition: 0.5s ease;
 cursor: pointer;
-
 }
 .download:hover{
   
@@ -227,11 +242,125 @@ cursor: pointer;
 
  @media only screen and (max-width: 1500px) and (min-width: 1380px) {
 
+  .products_main_all {
+  
+    gap: 15px; /* Provides spacing between cards */
+  }
+  
+  .product-card {
+    /* Fixed width for each card */
+  min-height: 350px; /* Minimum height to maintain uniformity */
+  max-width: 300px;
+  }
+  
+  .images {
+    max-width: 270px;
+    height: 230px; /* Fixed height for images */
+  }
+  
+  .images_title{
+  font-size: 1.0rem;
+  } 
+  
+  .images_description {
+  
+  font-size: 1rem;
+  }
+
+  .download{
+    font-size: 1rem;
+    }
+  
+    .FilterBox{
+      margin-top: 1em;
+      margin-bottom: 2em;
+      padding-bottom: 1em;
+      width: 13.5em;
+      }
+         
+      
+      .FilterElement{
+       margin: 0.6em;
+      }
+      
+      .FilterHead{
+   
+      font-size: 1.5rem;
+      
+      }
+      
+      /* Add a sleek design to the checkbox */
+      .FilterElement {
+      font-size: 1rem;
+      width: 1.0em; /* increased from 20px */
+      height: 1.0em; /* increased from 20px */
+
+      }
+          
+  
+  
+
    
 }
 
 @media only screen and (max-width: 1379px) {
-    
+  .products_main_all {
+  
+    gap: 15px; /* Provides spacing between cards */
+  }
+  
+  .product-card {
+    /* Fixed width for each card */
+  min-height: 350px; /* Minimum height to maintain uniformity */
+  max-width: 250px;
+  }
+  
+  .images {
+    max-width: 220px;
+    height: 230px; /* Fixed height for images */
+  }
+  
+  .images_title{
+  font-size: 1.0rem;
+  } 
+  
+  .images_description {
+  
+  font-size: 0.9rem;
+  }
+  .download{
+    font-size: 0.9rem;
+    }
+
+
+    .FilterBox{
+      margin-top: 1em;
+      margin-bottom: 2em;
+      padding-bottom: 1em;
+      width: 13.5em;
+      }
+         
+      
+      .FilterElement{
+       margin: 0.6em;
+      }
+      
+      .FilterHead{
+   
+      font-size: 1.5rem;
+      
+      }
+      
+      /* Add a sleek design to the checkbox */
+      .FilterElement {
+      font-size: 1rem;
+      width: 1.0em; /* increased from 20px */
+      height: 1.0em; /* increased from 20px */
+
+      }
+          
+  
+
 }
 
 
@@ -250,6 +379,22 @@ cursor: pointer;
     .sidebar {
     width: 100%;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
     
     /* Add a media query */
