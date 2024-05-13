@@ -4,6 +4,7 @@
 
 
 
+
 .navbar {
     display: flex;
     flex-direction: column;
@@ -65,9 +66,11 @@ color: #015049;}
 
 .navbar__menu-item {
     margin: 0.5em;
+   
 }
 
 .navbar__menu-link {
+    position: relative;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -83,6 +86,62 @@ color: #015049;}
     color: #053d7c;
     background-color: white;
 }
+
+/* Style for dropdown menu */
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    text-align: start;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    z-index: 100;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    width: 20%; 
+}
+
+.dropdown-menu ul {
+    margin: 1em 0em 1em 0em;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    color: navy;
+}
+
+.dropdown-menu a {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: flex-start;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: clamp(0.7rem, 0.9vw,1.5rem); /* Ensures font sizes between 0.9rem and 1.2rem */
+    color: navy;
+    text-decoration: none;
+    padding: 8px 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+.dropdown-menu a:hover {
+    background-color: #d5e6f7;
+}
+
+.icon {
+    margin-right: 1em;
+    width: 2.0vw;
+    height: 2.0vw;
+    min-width: 16px; /* Minimum size to ensure visibility */
+    min-height: 16px;
+    max-width: 48px; /* Maximum size to prevent it from being too large */
+    max-height: 48px;
+}
+
+
+.navbar__menu-item:hover .dropdown-menu {
+    display: block;
+    
+}
+
+
 
 
 @media only screen and (max-width: 1500px) and (min-width: 1380px) {
