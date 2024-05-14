@@ -1,0 +1,39 @@
+
+
+
+
+.card-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.card {
+    padding: 0.5em;
+    margin: 0.5em;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for 3D effect */
+    cursor: pointer;
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    color: #333;
+    text-align: center; /* Center align text */
+}
+
+.card:hover {
+    background-color: #000057;
+    color: whitesmoke;
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover for more depth */
+}
+
+.card_active{
+    background-color: #000057;
+    color: rgb(255, 255, 255);
+
+}

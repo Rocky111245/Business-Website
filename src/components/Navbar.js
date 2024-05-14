@@ -23,17 +23,17 @@ const Navbar = () => {
           <li className="navbar__menu-item"><a href="/" className="navbar__menu-link">Home</a></li>
           <li className="navbar__menu-item">
             <div className="navbar__menu-link-container product ">
-            <a className="navbar__menu-link ">
+            <a href="/Products" className="navbar__menu-link ">
               Products
             </a>
             <RxChevronRight className="chevron" />
             </div>
             <ul className="dropdown-menu">
-                <ul><a href="/Ophthalmology"><GoEye className="icon" />Ophthalmology</a></ul>
-                <ul><a href="/Dental-Treatment"><TbDental className="icon" />Dental Treatment Delivery System</a></ul>
-                <ul><a href="/ICU-Equipment"><BsLungs className="icon" />ICU Equipment</a></ul>
-                <ul><a href="/Neonatal-Pediatric"><FaBaby className="icon" />Neonatal/Pediatric</a></ul>
-                <ul><a href="/Nephrology"><GiKidneys className="icon" />Nephrology</a></ul>
+                <ul><a href="/Ophthalmology"><GoEye className="dropdown-icon" />Ophthalmology</a></ul>
+                <ul><a href="/Dental-Treatment"><TbDental className="dropdown-icon" />Dental Treatment Delivery System</a></ul>
+                <ul><a href="/ICU-Equipment"><BsLungs className="dropdown-icon" />ICU Equipment</a></ul>
+                <ul><a href="/Neonatal-Pediatric"><FaBaby className="dropdown-icon" />Neonatal/Pediatric</a></ul>
+                <ul><a href="/Nephrology"><GiKidneys className="dropdown-icon" />Nephrology</a></ul>
             </ul>
 
           </li>

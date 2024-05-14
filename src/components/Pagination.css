@@ -1,0 +1,48 @@
+.pagination-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 12px; /* Space between buttons */
+    background-color: #f9f9f9; /* Light background color for the pagination bar */
+    border-radius: 10px; /* Rounded corners for the pagination bar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+}
+
+.page-number {
+    padding: 10px 20px;
+    border: 2px solid #007BFF; /* Primary color for borders */
+    background-color: #ffffff; /* White background for buttons */
+    color: #007BFF; /* Primary color for text */
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+.page-number:hover {
+    background-color: #007BFF; /* Primary color on hover */
+    color: #ffffff; /* White text on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.page-number.active {
+    background-color: #007BFF; /* Primary color for active page */
+    color: #ffffff; /* White text for active page */
+    border: 2px solid #0056b3; /* Darker border for active page */
+}
+
+.page-number.previous,
+.page-number.next {
+    font-weight: 700; /* Bold text for navigation buttons */
+    border-radius: 5px; /* Rounded corners for navigation buttons */
+}
+
+.page-number.previous:hover,
+.page-number.next:hover {
+    background-color: #0056b3; /* Darker hover effect for navigation buttons */
+    color: #ffffff; /* White text on hover for navigation buttons */
+    transform: translateY(-2px); /* Slight lift effect on hover for navigation buttons */
+}
