@@ -20,12 +20,12 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
-    "uglify-js": "^3.17.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "minify-js": "uglifyjs --compress --mangle --output dist/app.min.js -- src/**/*.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -46,5 +46,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.18",
+    "uglify-js": "^3.17.4"
   }
 }
